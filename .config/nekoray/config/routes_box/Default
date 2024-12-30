@@ -1,0 +1,11 @@
+{
+    "custom": "{\"rules\":[{\"domain_suffix\":[\".ru\"],\"outbound\":\"direct\"}]}",
+    "def_outbound": "proxy",
+    "direct_dns": "https://doh.pub/dns-query",
+    "direct_ip": "geoip:ru",
+    "dns_final_out": "proxy",
+    "dns_routing": true,
+    "remote_dns": "https://dns.google/dns-query",
+    "sniffing_mode": 1,
+    "use_dns_object": false
+}

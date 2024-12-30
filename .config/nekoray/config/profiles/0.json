@@ -1,0 +1,30 @@
+{
+    "bean": {
+        "_v": 0,
+        "addr": "150.241.82.204",
+        "flow": "xtls-rprx-vision",
+        "name": "shushmyr",
+        "pass": "bb9177d3-f5f3-43d1-9e87-99ff32ad36a7",
+        "port": 44102,
+        "stream": {
+            "ed_len": 0,
+            "insecure": false,
+            "mux_s": 0,
+            "net": "tcp",
+            "pbk": "8PhWu9pHoftFVE8xn3TzUyEibQmxZHN62HNQGIm5aj0",
+            "sec": "tls",
+            "sid": "66139c2b",
+            "sni": "archlinux.org",
+            "spx": "/",
+            "utls": "random"
+        }
+    },
+    "gid": 0,
+    "id": 0,
+    "traffic": {
+        "dl": 81678816,
+        "ul": 1987826
+    },
+    "type": "vless",
+    "yc": 0
+}

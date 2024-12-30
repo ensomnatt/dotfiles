@@ -1,0 +1,874 @@
+[2024-12-15 16:30:26.019] [148411] (engine.cpp:511): Created native engine, time: Sun Dec 15 16:30:26 2024 MSK, logPath: /home/shushmyr/.config/discord/logs/, logLevel: 2
+[2024-12-15 16:30:26.019] [148411] (input_volume_stats_reporter.cc:98): Will not log any `WebRTC.Audio.Apm.AppliedInputVolume.*` histogram stats.
+[2024-12-15 16:30:26.019] [148411] (input_volume_stats_reporter.cc:98): Will not log any `WebRTC.Audio.Apm.RecommendedInputVolume.*` histogram stats.
+[2024-12-15 16:30:26.019] [148411] (audio_processing_impl.cc:695): Injected APM submodules:
+Echo control factory: 0
+Echo detector: 0
+Capture analyzer: 0
+Capture post processor: 0
+Render pre processor: 0
+[2024-12-15 16:30:26.019] [148411] (audio_processing_impl.cc:708): AudioProcessing: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 0 }, echo_canceller: { enabled: 0, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-12-15 16:30:26.019] [148411] (audio_processing_impl.cc:911): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 0, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-12-15 16:30:26.019] [148411] (audio_device_buffer.cc:65): AudioDeviceBuffer::ctor
+[2024-12-15 16:30:26.019] [148411] (audio_device_impl.cc:143): current platform is Linux
+[2024-12-15 16:30:26.019] [148411] (audio_device_impl.cc:162): CreatePlatformSpecificObjects
+[2024-12-15 16:30:26.019] [148411] (audio_device_impl.cc:991): PlatformAudioLayer
+[2024-12-15 16:30:26.019] [148411] (audio_device_impl.cc:298): PulseAudio support is enabled.
+[2024-12-15 16:30:26.019] [148411] (audio_device_impl.cc:303): Linux PulseAudio APIs will be utilized
+[2024-12-15 16:30:26.019] [148411] (audio_device_impl.cc:344): AttachAudioBuffer
+[2024-12-15 16:30:26.019] [148411] (audio_device_buffer.cc:182): SetRecordingSampleRate(0)
+[2024-12-15 16:30:26.019] [148411] (audio_device_buffer.cc:188): SetPlayoutSampleRate(0)
+[2024-12-15 16:30:26.019] [148411] (audio_device_buffer.cc:202): SetRecordingChannels(0)
+[2024-12-15 16:30:26.019] [148411] (audio_device_buffer.cc:208): SetPlayoutChannels(0)
+[2024-12-15 16:30:26.019] [148411] (audio_device_impl.cc:354): ActiveAudioLayer
+[2024-12-15 16:30:26.019] [148411] (audio_device_buffer.cc:65): AudioDeviceBuffer::ctor
+[2024-12-15 16:30:26.019] [148411] (audio_device_impl.cc:143): current platform is Linux
+[2024-12-15 16:30:26.019] [148411] (audio_device_impl.cc:162): CreatePlatformSpecificObjects
+[2024-12-15 16:30:26.019] [148411] (audio_device_impl.cc:991): PlatformAudioLayer
+[2024-12-15 16:30:26.019] [148411] (audio_device_impl.cc:298): PulseAudio support is enabled.
+[2024-12-15 16:30:26.019] [148411] (audio_device_impl.cc:303): Linux PulseAudio APIs will be utilized
+[2024-12-15 16:30:26.019] [148411] (audio_device_impl.cc:344): AttachAudioBuffer
+[2024-12-15 16:30:26.019] [148411] (audio_device_buffer.cc:182): SetRecordingSampleRate(0)
+[2024-12-15 16:30:26.019] [148411] (audio_device_buffer.cc:188): SetPlayoutSampleRate(0)
+[2024-12-15 16:30:26.019] [148411] (audio_device_buffer.cc:202): SetRecordingChannels(0)
+[2024-12-15 16:30:26.019] [148411] (audio_device_buffer.cc:208): SetPlayoutChannels(0)
+[2024-12-15 16:30:26.019] [148411] (input_volume_stats_reporter.cc:98): Will not log any `WebRTC.Audio.Apm.AppliedInputVolume.*` histogram stats.
+[2024-12-15 16:30:26.019] [148411] (input_volume_stats_reporter.cc:98): Will not log any `WebRTC.Audio.Apm.RecommendedInputVolume.*` histogram stats.
+[2024-12-15 16:30:26.019] [148411] (audio_processing_impl.cc:695): Injected APM submodules:
+Echo control factory: 0
+Echo detector: 0
+Capture analyzer: 0
+Capture post processor: 0
+Render pre processor: 0
+[2024-12-15 16:30:26.019] [148411] (audio_processing_impl.cc:708): AudioProcessing: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 0 }, echo_canceller: { enabled: 0, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-12-15 16:30:26.020] [148411] (audio_engine.cpp:473): Creating audio engine: standard
+[2024-12-15 16:30:26.020] [148411] (audio_device_impl.cc:364): Init
+[2024-12-15 16:30:26.024] [148411] (audio_device_impl.cc:364): Init
+[2024-12-15 16:30:26.028] [148411] (audio_coding.cpp:156): Using software Opus decoder
+[2024-12-15 16:30:26.028] [148411] (audio_coding.cpp:173): Using software Opus encoder
+[2024-12-15 16:30:26.028] [148411] (audio_device_impl.cc:895): RegisterAudioCallback
+[2024-12-15 16:30:26.028] [148411] (audio_device_impl.cc:547): SetMicrophoneVolume(100)
+[2024-12-15 16:30:26.028] [148411] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-12-15 16:30:26.028] [148411] (audio_device_impl.cc:895): RegisterAudioCallback
+[2024-12-15 16:30:26.028] [148411] (audio_engine.cpp:182): Setting audio input device: 'default'
+[2024-12-15 16:30:26.028] [148411] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-12-15 16:30:26.028] [148411] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-12-15 16:30:26.028] [148411] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2024-12-15 16:30:26.028] [148411] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2024-12-15 16:30:26.028] [148411] (audio_mixer_manager_pulse_linux.cc:429): input device index has not been set
+[2024-12-15 16:30:26.028] [148411] (audio_device_impl.cc:578): SetStereoRecording(0)
+[2024-12-15 16:30:26.028] [148411] (audio_device_buffer.cc:202): SetRecordingChannels(1)
+[2024-12-15 16:30:26.028] [148411] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-12-15 16:30:26.028] [148411] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-12-15 16:30:26.028] [148411] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-12-15 16:30:26.028] [148411] (audio_engine.cpp:199): Setting audio output device: 'default'
+[2024-12-15 16:30:26.028] [148411] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-12-15 16:30:26.028] [148411] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-12-15 16:30:26.029] [148411] (audio_device_impl.cc:619): output: 1
+[2024-12-15 16:30:26.029] [148411] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-12-15 16:30:26.029] [148411] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-12-15 16:30:26.029] [148411] (audio_device_impl.cc:911): BuiltInAECIsAvailable
+[2024-12-15 16:30:26.029] [148411] (audio_device_generic.cc:32): BuiltInAECIsAvailable: Not supported on this platform
+[2024-12-15 16:30:26.029] [148411] (audio_device_impl.cc:914): output: 0
+[2024-12-15 16:30:26.029] [148411] (audio_processing_impl.cc:911): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-12-15 16:30:26.029] [148411] (matched_filter.cc:141): AEC3: Pre echo configuration:  threshold = 0.5, mode =  3.
+[2024-12-15 16:30:26.029] [148411] (transparent_mode.cc:239): AEC3 Transparent Mode: Legacy
+[2024-12-15 16:30:26.029] [148411] (echo_canceller3.cc:793): AEC3 created with sample rate: 16000 Hz, num render channels: 1, num capture channels: 1
+[2024-12-15 16:30:26.029] [148411] (audio_processing_impl.cc:911): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-12-15 16:30:26.029] [148411] (clipping_predictor.cc:358): [AGC2] Clipping prediction disabled.
+[2024-12-15 16:30:26.029] [148411] (agc_manager_direct.cc:481): [agc] analog controller enabled: yes
+[2024-12-15 16:30:26.029] [148411] (agc_manager_direct.cc:484): [agc] Min mic level: 12 (overridden: no)
+[2024-12-15 16:30:26.029] [148411] (captured_audio_processor.cpp:127): SetNoiseCancellation: 0
+[2024-12-15 16:30:26.029] [148411] (audio_processing_impl.cc:911): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 1, level: High }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-12-15 16:30:26.029] [148411] (field_trial.cc:164): Setting field trial string:WebRTC-Audio-NetEqDecisionLogicConfig/reinit_after_expands:100/
+[2024-12-15 16:30:26.031] [148411] (audio_engine.cpp:182): Setting audio input device: 'default'
+[2024-12-15 16:30:26.031] [148411] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-12-15 16:30:26.031] [148411] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-12-15 16:30:26.031] [148411] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-12-15 16:30:26.031] [148411] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2024-12-15 16:30:26.031] [148411] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2024-12-15 16:30:26.031] [148411] (audio_mixer_manager_pulse_linux.cc:429): input device index has not been set
+[2024-12-15 16:30:26.031] [148411] (audio_device_impl.cc:578): SetStereoRecording(0)
+[2024-12-15 16:30:26.031] [148411] (audio_device_buffer.cc:202): SetRecordingChannels(1)
+[2024-12-15 16:30:26.031] [148411] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-12-15 16:30:26.031] [148411] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-12-15 16:30:26.031] [148411] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-12-15 16:30:26.031] [148411] (audio_engine.cpp:199): Setting audio output device: 'default'
+[2024-12-15 16:30:26.031] [148411] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-12-15 16:30:26.031] [148411] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-12-15 16:30:26.031] [148411] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-12-15 16:30:26.032] [148411] (audio_device_impl.cc:619): output: 1
+[2024-12-15 16:30:26.032] [148411] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-12-15 16:30:26.032] [148411] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-12-15 16:30:26.032] [148411] (engine.cpp:225): *** OnDevicesChanged:
+[2024-12-15 16:30:26.032] [148411] (engine.cpp:226): * audioInput:
+[2024-12-15 16:30:26.032] [148411] (engine.cpp:229): - default: alsa_output.pci-0000_0b_00.6.analog-stereo.monitor ()
+[2024-12-15 16:30:26.032] [148411] (engine.cpp:231): * audioOutput:
+[2024-12-15 16:30:26.032] [148411] (engine.cpp:234): - default: Family 17h/19h/1ah HD Audio Controller Analog Stereo ()
+[2024-12-15 16:30:26.032] [148411] (engine.cpp:234): - Family 17h/19h/1ah HD Audio Controller Analog Stereo ()
+[2024-12-15 16:30:26.250] [148411] (audio_engine.cpp:182): Setting audio input device: 'default'
+[2024-12-15 16:30:26.251] [148411] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-12-15 16:30:26.251] [148411] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-12-15 16:30:26.251] [148411] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-12-15 16:30:26.251] [148411] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2024-12-15 16:30:26.251] [148411] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2024-12-15 16:30:26.251] [148411] (audio_mixer_manager_pulse_linux.cc:429): input device index has not been set
+[2024-12-15 16:30:26.251] [148411] (audio_device_impl.cc:578): SetStereoRecording(0)
+[2024-12-15 16:30:26.251] [148411] (audio_device_buffer.cc:202): SetRecordingChannels(1)
+[2024-12-15 16:30:26.251] [148411] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-12-15 16:30:26.251] [148411] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-12-15 16:30:26.251] [148411] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-12-15 16:30:26.251] [148411] (audio_engine.cpp:199): Setting audio output device: 'default'
+[2024-12-15 16:30:26.251] [148411] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-12-15 16:30:26.251] [148411] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-12-15 16:30:26.252] [148411] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-12-15 16:30:26.252] [148411] (audio_device_impl.cc:619): output: 1
+[2024-12-15 16:30:26.252] [148411] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-12-15 16:30:26.252] [148411] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-12-15 16:30:26.252] [148411] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-12-15 16:30:26.252] [148411] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-12-15 16:30:26.252] [148411] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-12-15 16:30:26.252] [148411] (engine_audio_transport.cpp:547): EngineAudioTransport::SetSidechainCompression 0
+[2024-12-15 16:30:26.252] [148411] (engine_audio_transport.cpp:558): EngineAudioTransport::ApplySidechainCompressionSettings  threshold: -32.5 ratio: 0.433333
+[2024-12-15 16:30:26.642] [148411] (audio_engine.cpp:182): Setting audio input device: 'default'
+[2024-12-15 16:30:26.642] [148411] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-12-15 16:30:26.642] [148411] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-12-15 16:30:26.642] [148411] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-12-15 16:30:26.642] [148411] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2024-12-15 16:30:26.642] [148411] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2024-12-15 16:30:26.643] [148411] (audio_mixer_manager_pulse_linux.cc:429): input device index has not been set
+[2024-12-15 16:30:26.643] [148411] (audio_device_impl.cc:578): SetStereoRecording(0)
+[2024-12-15 16:30:26.643] [148411] (audio_device_buffer.cc:202): SetRecordingChannels(1)
+[2024-12-15 16:30:26.643] [148411] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-12-15 16:30:26.643] [148411] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-12-15 16:30:26.643] [148411] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-12-15 16:30:26.643] [148411] (audio_engine.cpp:199): Setting audio output device: 'default'
+[2024-12-15 16:30:26.643] [148411] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-12-15 16:30:26.643] [148411] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-12-15 16:30:26.643] [148411] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-12-15 16:30:26.644] [148411] (audio_device_impl.cc:619): output: 1
+[2024-12-15 16:30:26.644] [148411] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-12-15 16:30:26.644] [148411] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-12-15 16:30:28.292] [148389] JS console: [GatewaySocket] [FAST CONNECT] successfully took over websocket, state:
+[2024-12-15 16:30:28.292] [148389] JS console: [GatewaySocket] [CONNECTED] wss://gateway.discord.gg/?encoding=etf&v=9&compress=zstd-stream in 1 ms
+[2024-12-15 16:30:28.907] [148389] JS console: [GatewaySocket] [READY] took 616ms, as 1937d09c849d725614ae1ce8bd92cb43
+[2024-12-15 16:30:29.059] [148389] JS console: [GatewaySocket] [READY_SUPPLEMENTAL] took 768ms
+[2024-12-15 16:30:37.926] [148411] (audio_coding.cpp:156): Using software Opus decoder
+[2024-12-15 16:30:37.926] [148411] (audio_coding.cpp:173): Using software Opus encoder
+[2024-12-15 16:30:37.926] [148411] (bitrate_prober.cc:47): Bandwidth probing enabled, set to inactive
+[2024-12-15 16:30:37.926] [148411] (cpu_info.cc:53): Available number of cores: 4
+[2024-12-15 16:30:37.926] [148411] (remote_estimator_proxy.cc:68): Maximum interval between transport feedback RTCP messages: 250 ms
+[2024-12-15 16:30:37.926] [148411] (aimd_rate_control.cc:97): Using aimd rate control with back off factor 0.85
+[2024-12-15 16:30:37.926] [148411] (remote_bitrate_estimator_single_stream.cc:64): RemoteBitrateEstimatorSingleStream: Instantiating.
+[2024-12-15 16:30:37.926] [148411] (pacing_controller.cc:110): PacedSender paused.
+[2024-12-15 16:30:37.927] [148411] (audio_coding_module.cc:192): Created
+[2024-12-15 16:30:37.927] [148411] (audio_send_stream.cc:164): AudioSendStream: 5150
+[2024-12-15 16:30:37.927] [148411] (audio_send_stream.cc:227): AudioSendStream::ConfigureStream: {rtp: {ssrc: 5150, extmap-allow-mixed: false, extensions: [], c_name: }, rtcp_report_interval_ms: 5000, send_transport: (Transport), min_bitrate_bps: -1, max_bitrate_bps: -1, has audio_network_adaptor_config: false, has_dscp: false, send_codec_spec: {nack_enabled: false, transport_cc_enabled: false, enable_non_sender_rtt: false, cng_payload_type: <unset>, red_payload_type: <unset>, payload_type: 0, format: {name: pcmu, clockrate_hz: 8000, num_channels: 1, parameters: {}}}}
+[2024-12-15 16:30:37.927] [148411] (audio_send_stream.cc:861): Config is invalid: min_bitrate_bps=-1; max_bitrate_bps=-1; both expected greater or equal to 0
+[2024-12-15 16:30:37.927] [148411] (audio_send_stream.cc:861): Config is invalid: min_bitrate_bps=-1; max_bitrate_bps=-1; both expected greater or equal to 0
+[2024-12-15 16:30:37.927] [148411] (call.cc:1220): UpdateAggregateNetworkState: aggregate_state change to up
+[2024-12-15 16:30:37.927] [148411] (pacing_controller.cc:117): PacedSender resumed.
+[2024-12-15 16:30:37.927] [148411] (rtp_transport_controller_send.cc:588): Creating fallback congestion controller
+[2024-12-15 16:30:37.927] [148411] (engine.cpp:294): DiscordFieldTrials::Lookup(WebRTC-Bwe-LossBasedBweV2) 0
+[2024-12-15 16:30:37.927] [148411] (alr_experiment.cc:80): Using ALR experiment settings: pacing factor: 1, max pacer queue length: 2875, ALR bandwidth usage percent: 80, ALR start budget level percent: 40, ALR end budget level percent: -60, ALR experiment group ID: 3
+[2024-12-15 16:30:37.927] [148411] (engine.cpp:311): DiscordFieldTrials::Lookup(WebRTC-BweWindowSizeInPackets) 0
+[2024-12-15 16:30:37.927] [148411] (engine.cpp:321): DiscordFieldTrials::Lookup(WebRTC-BWE-TrendlineEstimatorSettings) 3750ms
+[2024-12-15 16:30:37.927] [148411] (trendline_estimator.cc:197): Using Trendline filter for delay change estimation with settings sort:false,cap:false,beginning_packets:7,end_packets:7,cap_uncertainty:0,window_size:1000,min_window_size:50,max_window_duration_ms:3750 and no network state predictor
+[2024-12-15 16:30:37.927] [148411] (engine.cpp:311): DiscordFieldTrials::Lookup(WebRTC-BweWindowSizeInPackets) 0
+[2024-12-15 16:30:37.927] [148411] (engine.cpp:321): DiscordFieldTrials::Lookup(WebRTC-BWE-TrendlineEstimatorSettings) 3750ms
+[2024-12-15 16:30:37.927] [148411] (trendline_estimator.cc:197): Using Trendline filter for delay change estimation with settings sort:false,cap:false,beginning_packets:7,end_packets:7,cap_uncertainty:0,window_size:1000,min_window_size:50,max_window_duration_ms:3750 and no network state predictor
+[2024-12-15 16:30:37.927] [148411] (engine.cpp:331): DiscordFieldTrials::Lookup(WebRTC-BweAimdRateControlConfig) 0
+[2024-12-15 16:30:37.927] [148411] (aimd_rate_control.cc:97): Using aimd rate control with back off factor 0.85
+[2024-12-15 16:30:37.927] [148411] (delay_based_bwe.cc:84): Initialized DelayBasedBwe with separate audio overuse detectionenabled:false,packet_threshold:10,time_threshold:1 s
+[2024-12-15 16:30:37.927] [148411] (delay_based_bwe.cc:301): BWE Setting start bitrate to: 300 kbps
+[2024-12-15 16:30:37.927] [148411] (probe_controller.cc:300): Measured bitrate: 300 kbps Minimum to probe further: 1260 kbps upper limit: +inf bps
+[2024-12-15 16:30:37.927] [148411] (bitrate_prober.cc:111): Probe cluster (bitrate_bps:min bytes:min packets): (900000:1688:5, Inactive)
+[2024-12-15 16:30:37.927] [148411] (bitrate_prober.cc:111): Probe cluster (bitrate_bps:min bytes:min packets): (1800000:3375:5, Inactive)
+[2024-12-15 16:30:37.927] [148411] (bitrate_allocator.cc:393): Current BWE 300000
+[2024-12-15 16:30:37.927] [148411] (audio_device_impl.cc:888): Recording
+[2024-12-15 16:30:37.927] [148411] (audio_device_impl.cc:807): InitRecording
+[2024-12-15 16:30:37.927] [148411] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-12-15 16:30:37.927] [148411] (audio_device_buffer.cc:182): SetRecordingSampleRate(48000)
+[2024-12-15 16:30:37.927] [148411] (audio_device_buffer.cc:202): SetRecordingChannels(1)
+[2024-12-15 16:30:37.927] [148411] (audio_device_impl.cc:813): output: 0
+[2024-12-15 16:30:37.927] [148411] (audio_device_impl.cc:863): StartRecording
+[2024-12-15 16:30:37.927] [148411] (audio_device_impl.cc:888): Recording
+[2024-12-15 16:30:37.955] [148411] (audio_device_impl.cc:870): output: 0
+[2024-12-15 16:30:37.955] [148411] (audio_device_impl.cc:447): MicrophoneIsInitialized
+[2024-12-15 16:30:37.955] [148411] (audio_device_impl.cc:450): output: 0
+[2024-12-15 16:30:37.955] [148411] (audio_device_impl.cc:403): InitMicrophone
+[2024-12-15 16:30:37.955] [148411] (audio_device_impl.cc:888): Recording
+[2024-12-15 16:30:37.982] [148419] (audio_device_buffer.cc:247): Size of recording buffer: 480
+[2024-12-15 16:30:37.982] [148419] (captured_audio_processor.cpp:93): Audio frames processed: 0, noise canceller process time: 0 [ms]
+[2024-12-15 16:30:37.982] [148419] (captured_audio_processor.cpp:104): Audio frame: 0, samples: 80, channels: 1, rate: 8000 [Hz], bytes: 2, level: 8
+[2024-12-15 16:30:37.983] [148419] (matched_filter.cc:141): AEC3: Pre echo configuration:  threshold = 0.5, mode =  3.
+[2024-12-15 16:30:37.983] [148419] (transparent_mode.cc:239): AEC3 Transparent Mode: Legacy
+[2024-12-15 16:30:37.983] [148419] (echo_canceller3.cc:793): AEC3 created with sample rate: 16000 Hz, num render channels: 1, num capture channels: 1
+[2024-12-15 16:30:37.983] [148585] (rtp_sender_audio.cc:306): First audio RTP packet sent to pacer
+[2024-12-15 16:30:38.928] [148411] (probe_controller.cc:434): kWaitingForProbingResult: timeout
+[2024-12-15 16:30:47.889] [148589] (region_latency_tester.cpp:72): Sending 5 latency test pings to region stockholm
+[2024-12-15 16:30:47.889] [148589] (region_latency_tester.cpp:72): Sending 5 latency test pings to region finland
+[2024-12-15 16:30:47.889] [148589] (region_latency_tester.cpp:72): Sending 5 latency test pings to region warsaw
+[2024-12-15 16:30:47.889] [148589] (region_latency_tester.cpp:72): Sending 5 latency test pings to region rotterdam
+[2024-12-15 16:30:47.889] [148589] (region_latency_tester.cpp:72): Sending 5 latency test pings to region frankfurt
+[2024-12-15 16:30:48.003] [148419] (captured_audio_processor.cpp:93): Audio frames processed: 1002, noise canceller process time: 0 [ms]
+[2024-12-15 16:30:48.003] [148419] (captured_audio_processor.cpp:104): Audio frame: 1002, samples: 80, channels: 1, rate: 8000 [Hz], bytes: 2, level: 751
+[2024-12-15 16:30:48.154] [148589] (region_latency_tester.cpp:283): Average RTT for region stockholm is 231.25
+[2024-12-15 16:30:48.154] [148589] (region_latency_tester.cpp:283): Average RTT for region finland is 264
+[2024-12-15 16:30:48.154] [148589] (region_latency_tester.cpp:283): Average RTT for region warsaw is 265
+[2024-12-15 16:30:48.154] [148589] (region_latency_tester.cpp:283): Average RTT for region rotterdam is 265
+[2024-12-15 16:30:48.154] [148589] (region_latency_tester.cpp:283): Average RTT for region frankfurt is 265
+[2024-12-15 16:30:54.025] [148411] (audio_processing_impl.cc:911): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 1, level: High }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-12-15 16:30:54.025] [148411] (audio_processing_impl.cc:911): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: High }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-12-15 16:30:54.025] [148411] (audio_processing_impl.cc:911): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: High }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-12-15 16:30:54.025] [148411] (captured_audio_processor.cpp:127): SetNoiseCancellation: 1
+[2024-12-15 16:30:54.026] [148411] (bitrate_prober.cc:47): Bandwidth probing enabled, set to inactive
+[2024-12-15 16:30:54.026] [148411] (remote_estimator_proxy.cc:68): Maximum interval between transport feedback RTCP messages: 250 ms
+[2024-12-15 16:30:54.026] [148411] (aimd_rate_control.cc:97): Using aimd rate control with back off factor 0.85
+[2024-12-15 16:30:54.026] [148411] (remote_bitrate_estimator_single_stream.cc:64): RemoteBitrateEstimatorSingleStream: Instantiating.
+[2024-12-15 16:30:54.026] [148411] (pacing_controller.cc:110): PacedSender paused.
+[2024-12-15 16:30:54.026] [148411] (delay_manager.cc:62): Delay manager config: quantile=0.95 forget_factor=0.983 start_forget_weight=2 resample_interval_ms=500 use_reorder_optimizer=1 reorder_forget_factor=0.9993 ms_per_loss_percent=20
+[2024-12-15 16:30:54.026] [148411] (struct_parameters_parser.cc:115): No field with key: 'reinit_after_expands' (found in trial: "reinit_after_expands:100")
+[2024-12-15 16:30:54.026] [148411] (decision_logic.cc:81): NetEq decision logic config: enable_stable_delay_mode=0 combine_concealment_decision=0 packet_history_size_ms=2000 cng_timeout_ms=-1 deceleration_target_level_offset_ms=85
+[2024-12-15 16:30:54.026] [148411] (neteq_impl.cc:143): NetEq config: sample_rate_hz=48000, enable_post_decode_vad=true, max_packets_in_buffer=200, min_delay_ms=0, enable_fast_accelerate=false, enable_muted_state=true, enable_rtx_handling=false
+[2024-12-15 16:30:54.026] [148411] (audio_receive_stream.cc:110): AudioReceiveStreamImpl: 5150
+[2024-12-15 16:30:54.026] [148411] (call.cc:1220): UpdateAggregateNetworkState: aggregate_state change to up
+[2024-12-15 16:30:54.026] [148411] (pacing_controller.cc:117): PacedSender resumed.
+[2024-12-15 16:30:54.026] [148411] (rtp_transport_controller_send.cc:588): Creating fallback congestion controller
+[2024-12-15 16:30:54.026] [148411] (engine.cpp:294): DiscordFieldTrials::Lookup(WebRTC-Bwe-LossBasedBweV2) 0
+[2024-12-15 16:30:54.026] [148411] (alr_experiment.cc:80): Using ALR experiment settings: pacing factor: 1, max pacer queue length: 2875, ALR bandwidth usage percent: 80, ALR start budget level percent: 40, ALR end budget level percent: -60, ALR experiment group ID: 3
+[2024-12-15 16:30:54.026] [148411] (engine.cpp:311): DiscordFieldTrials::Lookup(WebRTC-BweWindowSizeInPackets) 0
+[2024-12-15 16:30:54.026] [148411] (engine.cpp:321): DiscordFieldTrials::Lookup(WebRTC-BWE-TrendlineEstimatorSettings) 3750ms
+[2024-12-15 16:30:54.026] [148411] (trendline_estimator.cc:197): Using Trendline filter for delay change estimation with settings sort:false,cap:false,beginning_packets:7,end_packets:7,cap_uncertainty:0,window_size:1000,min_window_size:50,max_window_duration_ms:3750 and no network state predictor
+[2024-12-15 16:30:54.026] [148411] (engine.cpp:311): DiscordFieldTrials::Lookup(WebRTC-BweWindowSizeInPackets) 0
+[2024-12-15 16:30:54.026] [148411] (engine.cpp:321): DiscordFieldTrials::Lookup(WebRTC-BWE-TrendlineEstimatorSettings) 3750ms
+[2024-12-15 16:30:54.026] [148411] (trendline_estimator.cc:197): Using Trendline filter for delay change estimation with settings sort:false,cap:false,beginning_packets:7,end_packets:7,cap_uncertainty:0,window_size:1000,min_window_size:50,max_window_duration_ms:3750 and no network state predictor
+[2024-12-15 16:30:54.026] [148411] (engine.cpp:331): DiscordFieldTrials::Lookup(WebRTC-BweAimdRateControlConfig) 0
+[2024-12-15 16:30:54.026] [148411] (aimd_rate_control.cc:97): Using aimd rate control with back off factor 0.85
+[2024-12-15 16:30:54.026] [148411] (delay_based_bwe.cc:84): Initialized DelayBasedBwe with separate audio overuse detectionenabled:false,packet_threshold:10,time_threshold:1 s
+[2024-12-15 16:30:54.026] [148411] (delay_based_bwe.cc:301): BWE Setting start bitrate to: 300 kbps
+[2024-12-15 16:30:54.026] [148411] (probe_controller.cc:300): Measured bitrate: 300 kbps Minimum to probe further: 1260 kbps upper limit: +inf bps
+[2024-12-15 16:30:54.026] [148411] (bitrate_prober.cc:111): Probe cluster (bitrate_bps:min bytes:min packets): (900000:1688:5, Inactive)
+[2024-12-15 16:30:54.026] [148411] (bitrate_prober.cc:111): Probe cluster (bitrate_bps:min bytes:min packets): (1800000:3375:5, Inactive)
+[2024-12-15 16:30:54.026] [148411] (bitrate_allocator.cc:393): Current BWE 300000
+[2024-12-15 16:30:54.026] [148411] (audio_device_impl.cc:857): Playing
+[2024-12-15 16:30:54.026] [148411] (audio_device_impl.cc:794): InitPlayout
+[2024-12-15 16:30:54.026] [148411] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-12-15 16:30:54.027] [148411] (audio_device_buffer.cc:188): SetPlayoutSampleRate(48000)
+[2024-12-15 16:30:54.027] [148411] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-12-15 16:30:54.027] [148411] (audio_device_impl.cc:800): output: 0
+[2024-12-15 16:30:54.027] [148411] (audio_device_impl.cc:832): StartPlayout
+[2024-12-15 16:30:54.027] [148411] (audio_device_impl.cc:857): Playing
+[2024-12-15 16:30:54.058] [148420] (audio_device_buffer.cc:323): Size of playout buffer: 960
+[2024-12-15 16:30:54.058] [148411] (audio_device_impl.cc:839): output: 0
+[2024-12-15 16:30:54.059] [148411] (audio_coding_module.cc:192): Created
+[2024-12-15 16:30:54.059] [148411] (audio_send_stream.cc:164): AudioSendStream: 5150
+[2024-12-15 16:30:54.059] [148411] (audio_send_stream.cc:227): AudioSendStream::ConfigureStream: {rtp: {ssrc: 5150, extmap-allow-mixed: false, extensions: [], c_name: }, rtcp_report_interval_ms: 5000, send_transport: (Transport), min_bitrate_bps: -1, max_bitrate_bps: -1, has audio_network_adaptor_config: false, has_dscp: false, send_codec_spec: {nack_enabled: false, transport_cc_enabled: false, enable_non_sender_rtt: false, cng_payload_type: <unset>, red_payload_type: <unset>, payload_type: 120, format: {name: opus, clockrate_hz: 48000, num_channels: 2, parameters: {stereo: 0}}}}
+[2024-12-15 16:30:54.059] [148411] (audio_encoder_opus.cc:680): Set Opus bitrate to 32000 bps.
+[2024-12-15 16:30:54.059] [148411] (audio_send_stream.cc:861): Config is invalid: min_bitrate_bps=-1; max_bitrate_bps=-1; both expected greater or equal to 0
+[2024-12-15 16:30:54.059] [148411] (audio_send_stream.cc:861): Config is invalid: min_bitrate_bps=-1; max_bitrate_bps=-1; both expected greater or equal to 0
+[2024-12-15 16:30:54.059] [148411] (audio_device_impl.cc:888): Recording
+[2024-12-15 16:30:54.059] [148411] (audio_device_impl.cc:447): MicrophoneIsInitialized
+[2024-12-15 16:30:54.059] [148411] (audio_device_impl.cc:450): output: 0
+[2024-12-15 16:30:54.059] [148411] (audio_device_impl.cc:403): InitMicrophone
+[2024-12-15 16:30:54.059] [148411] (audio_device_impl.cc:888): Recording
+[2024-12-15 16:30:54.059] [148420] (matched_filter.cc:141): AEC3: Pre echo configuration:  threshold = 0.5, mode =  3.
+[2024-12-15 16:30:54.059] [148420] (transparent_mode.cc:239): AEC3 Transparent Mode: Legacy
+[2024-12-15 16:30:54.059] [148420] (echo_canceller3.cc:793): AEC3 created with sample rate: 16000 Hz, num render channels: 1, num capture channels: 1
+[2024-12-15 16:30:54.059] [148411] (call.cc:1220): UpdateAggregateNetworkState: aggregate_state change to down
+[2024-12-15 16:30:54.059] [148411] (pacing_controller.cc:110): PacedSender paused.
+[2024-12-15 16:30:54.059] [148411] (control_handler.cc:80): Bitrate estimate state changed, BWE: 300 kbps.
+[2024-12-15 16:30:54.059] [148411] (audio_send_stream.cc:179): ~AudioSendStream: 5150
+[2024-12-15 16:30:54.060] [148411] (voice_activity_detector.cpp:54): Attempting to reset while uninitialized
+[2024-12-15 16:30:54.060] [148419] (noise_canceller.cpp:36): Creating noise canceller, channels: 1, rate 48000, duration: 10 [ms], buffer size: 960 [bytes]
+[2024-12-15 16:30:54.070] [148419] (matched_filter.cc:141): AEC3: Pre echo configuration:  threshold = 0.5, mode =  3.
+[2024-12-15 16:30:54.071] [148419] (transparent_mode.cc:239): AEC3 Transparent Mode: Legacy
+[2024-12-15 16:30:54.071] [148419] (echo_canceller3.cc:793): AEC3 created with sample rate: 48000 Hz, num render channels: 1, num capture channels: 1
+[2024-12-15 16:30:54.072] [148591] (rtp_sender_audio.cc:306): First audio RTP packet sent to pacer
+[2024-12-15 16:30:55.027] [148411] (probe_controller.cc:434): kWaitingForProbingResult: timeout
+[2024-12-15 16:30:56.407] [148419] (block_processor.cc:178): Delay changed to 13 at block 598
+[2024-12-15 16:30:57.939] [148416] (audio_device_buffer.cc:447): [REC : 10004msec, 48kHz] callbacks: 1002, samples: 480960, rate: 48077, rate diff: 0%, level: 3318
+[2024-12-15 16:30:57.939] [148416] (audio_device_buffer.cc:473): [PLAY: 10004msec, 48kHz] callbacks: 390, samples: 187200, rate: 18713, rate diff: 61%, level: 150
+[2024-12-15 16:30:58.025] [148419] (captured_audio_processor.cpp:93): Audio frames processed: 2004, noise canceller process time: 229 [ms]
+[2024-12-15 16:30:58.025] [148419] (captured_audio_processor.cpp:104): Audio frame: 2004, samples: 480, channels: 1, rate: 48000 [Hz], bytes: 2, level: 8
+[2024-12-15 16:30:59.829] [148411] (audio_processing_impl.cc:911): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: High }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-12-15 16:30:59.829] [148411] (audio_processing_impl.cc:911): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: High }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-12-15 16:30:59.829] [148411] (audio_processing_impl.cc:911): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: High }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-12-15 16:30:59.830] [148411] (captured_audio_processor.cpp:127): SetNoiseCancellation: 1
+[2024-12-15 16:30:59.830] [148411] (audio_device_impl.cc:888): Recording
+[2024-12-15 16:30:59.830] [148411] (audio_device_impl.cc:877): StopRecording
+[2024-12-15 16:30:59.830] [148411] (audio_device_buffer.cc:175): HISTOGRAM(WebRTC.Audio.RecordedOnlyZeros): 0
+[2024-12-15 16:30:59.830] [148411] (audio_device_buffer.cc:178): total recording time: 21902
+[2024-12-15 16:30:59.830] [148411] (audio_device_impl.cc:881): output: 0
+[2024-12-15 16:30:59.830] [148591] (audio_encoder_opus.cc:680): Set Opus bitrate to 32000 bps.
+[2024-12-15 16:30:59.830] [148411] (audio_device_impl.cc:877): StopRecording
+[2024-12-15 16:30:59.830] [148411] (audio_device_impl.cc:881): output: 0
+[2024-12-15 16:30:59.830] [148411] (audio_send_stream.cc:179): ~AudioSendStream: 5150
+[2024-12-15 16:30:59.830] [148411] (audio_device_impl.cc:846): StopPlayout
+[2024-12-15 16:30:59.830] [148411] (audio_device_buffer.cc:146): total playout time: 5804
+[2024-12-15 16:30:59.830] [148411] (audio_device_impl.cc:850): output: 0
+[2024-12-15 16:30:59.830] [148411] (call.cc:1220): UpdateAggregateNetworkState: aggregate_state change to down
+[2024-12-15 16:30:59.830] [148411] (pacing_controller.cc:110): PacedSender paused.
+[2024-12-15 16:30:59.830] [148411] (control_handler.cc:80): Bitrate estimate state changed, BWE: 300 kbps.
+[2024-12-15 16:30:59.830] [148411] (audio_receive_stream.cc:137): ~AudioReceiveStreamImpl: 5150
+[2024-12-15 16:30:59.830] [148411] (voice_activity_detector.cpp:54): Attempting to reset while uninitialized
+[2024-12-15 16:30:59.830] [148411] (audio_coding.cpp:156): Using software Opus decoder
+[2024-12-15 16:30:59.830] [148411] (audio_coding.cpp:173): Using software Opus encoder
+[2024-12-15 16:30:59.830] [148411] (bitrate_prober.cc:47): Bandwidth probing enabled, set to inactive
+[2024-12-15 16:30:59.830] [148411] (remote_estimator_proxy.cc:68): Maximum interval between transport feedback RTCP messages: 250 ms
+[2024-12-15 16:30:59.830] [148411] (aimd_rate_control.cc:97): Using aimd rate control with back off factor 0.85
+[2024-12-15 16:30:59.830] [148411] (remote_bitrate_estimator_single_stream.cc:64): RemoteBitrateEstimatorSingleStream: Instantiating.
+[2024-12-15 16:30:59.830] [148411] (pacing_controller.cc:110): PacedSender paused.
+[2024-12-15 16:30:59.830] [148411] (audio_coding_module.cc:192): Created
+[2024-12-15 16:30:59.831] [148411] (audio_send_stream.cc:164): AudioSendStream: 5150
+[2024-12-15 16:30:59.831] [148411] (audio_send_stream.cc:227): AudioSendStream::ConfigureStream: {rtp: {ssrc: 5150, extmap-allow-mixed: false, extensions: [], c_name: }, rtcp_report_interval_ms: 5000, send_transport: (Transport), min_bitrate_bps: -1, max_bitrate_bps: -1, has audio_network_adaptor_config: false, has_dscp: false, send_codec_spec: {nack_enabled: false, transport_cc_enabled: false, enable_non_sender_rtt: false, cng_payload_type: <unset>, red_payload_type: <unset>, payload_type: 0, format: {name: pcmu, clockrate_hz: 8000, num_channels: 1, parameters: {}}}}
+[2024-12-15 16:30:59.831] [148411] (audio_send_stream.cc:861): Config is invalid: min_bitrate_bps=-1; max_bitrate_bps=-1; both expected greater or equal to 0
+[2024-12-15 16:30:59.831] [148411] (audio_send_stream.cc:861): Config is invalid: min_bitrate_bps=-1; max_bitrate_bps=-1; both expected greater or equal to 0
+[2024-12-15 16:30:59.831] [148411] (call.cc:1220): UpdateAggregateNetworkState: aggregate_state change to up
+[2024-12-15 16:30:59.831] [148411] (pacing_controller.cc:117): PacedSender resumed.
+[2024-12-15 16:30:59.831] [148411] (rtp_transport_controller_send.cc:588): Creating fallback congestion controller
+[2024-12-15 16:30:59.831] [148411] (engine.cpp:294): DiscordFieldTrials::Lookup(WebRTC-Bwe-LossBasedBweV2) 0
+[2024-12-15 16:30:59.831] [148411] (alr_experiment.cc:80): Using ALR experiment settings: pacing factor: 1, max pacer queue length: 2875, ALR bandwidth usage percent: 80, ALR start budget level percent: 40, ALR end budget level percent: -60, ALR experiment group ID: 3
+[2024-12-15 16:30:59.831] [148411] (engine.cpp:311): DiscordFieldTrials::Lookup(WebRTC-BweWindowSizeInPackets) 0
+[2024-12-15 16:30:59.831] [148411] (engine.cpp:321): DiscordFieldTrials::Lookup(WebRTC-BWE-TrendlineEstimatorSettings) 3750ms
+[2024-12-15 16:30:59.831] [148411] (trendline_estimator.cc:197): Using Trendline filter for delay change estimation with settings sort:false,cap:false,beginning_packets:7,end_packets:7,cap_uncertainty:0,window_size:1000,min_window_size:50,max_window_duration_ms:3750 and no network state predictor
+[2024-12-15 16:30:59.831] [148411] (engine.cpp:311): DiscordFieldTrials::Lookup(WebRTC-BweWindowSizeInPackets) 0
+[2024-12-15 16:30:59.831] [148411] (engine.cpp:321): DiscordFieldTrials::Lookup(WebRTC-BWE-TrendlineEstimatorSettings) 3750ms
+[2024-12-15 16:30:59.831] [148411] (trendline_estimator.cc:197): Using Trendline filter for delay change estimation with settings sort:false,cap:false,beginning_packets:7,end_packets:7,cap_uncertainty:0,window_size:1000,min_window_size:50,max_window_duration_ms:3750 and no network state predictor
+[2024-12-15 16:30:59.831] [148411] (engine.cpp:331): DiscordFieldTrials::Lookup(WebRTC-BweAimdRateControlConfig) 0
+[2024-12-15 16:30:59.831] [148411] (aimd_rate_control.cc:97): Using aimd rate control with back off factor 0.85
+[2024-12-15 16:30:59.831] [148411] (delay_based_bwe.cc:84): Initialized DelayBasedBwe with separate audio overuse detectionenabled:false,packet_threshold:10,time_threshold:1 s
+[2024-12-15 16:30:59.831] [148411] (delay_based_bwe.cc:301): BWE Setting start bitrate to: 300 kbps
+[2024-12-15 16:30:59.831] [148411] (probe_controller.cc:300): Measured bitrate: 300 kbps Minimum to probe further: 1260 kbps upper limit: +inf bps
+[2024-12-15 16:30:59.831] [148411] (bitrate_prober.cc:111): Probe cluster (bitrate_bps:min bytes:min packets): (900000:1688:5, Inactive)
+[2024-12-15 16:30:59.831] [148411] (bitrate_prober.cc:111): Probe cluster (bitrate_bps:min bytes:min packets): (1800000:3375:5, Inactive)
+[2024-12-15 16:30:59.831] [148411] (bitrate_allocator.cc:393): Current BWE 300000
+[2024-12-15 16:30:59.831] [148411] (audio_device_impl.cc:888): Recording
+[2024-12-15 16:30:59.831] [148411] (audio_device_impl.cc:807): InitRecording
+[2024-12-15 16:30:59.831] [148411] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-12-15 16:30:59.832] [148411] (audio_device_buffer.cc:182): SetRecordingSampleRate(48000)
+[2024-12-15 16:30:59.832] [148411] (audio_device_buffer.cc:202): SetRecordingChannels(1)
+[2024-12-15 16:30:59.832] [148411] (audio_device_impl.cc:813): output: 0
+[2024-12-15 16:30:59.832] [148411] (audio_device_impl.cc:863): StartRecording
+[2024-12-15 16:30:59.832] [148411] (audio_device_impl.cc:888): Recording
+[2024-12-15 16:30:59.892] [148411] (audio_device_impl.cc:870): output: 0
+[2024-12-15 16:30:59.892] [148411] (audio_device_impl.cc:447): MicrophoneIsInitialized
+[2024-12-15 16:30:59.892] [148411] (audio_device_impl.cc:450): output: 0
+[2024-12-15 16:30:59.892] [148411] (audio_device_impl.cc:403): InitMicrophone
+[2024-12-15 16:30:59.892] [148411] (audio_device_impl.cc:888): Recording
+[2024-12-15 16:30:59.923] [148419] (noise_canceller.cpp:36): Creating noise canceller, channels: 1, rate 8000, duration: 10 [ms], buffer size: 160 [bytes]
+[2024-12-15 16:30:59.924] [148419] (matched_filter.cc:141): AEC3: Pre echo configuration:  threshold = 0.5, mode =  3.
+[2024-12-15 16:30:59.924] [148419] (transparent_mode.cc:239): AEC3 Transparent Mode: Legacy
+[2024-12-15 16:30:59.924] [148419] (echo_canceller3.cc:793): AEC3 created with sample rate: 16000 Hz, num render channels: 1, num capture channels: 1
+[2024-12-15 16:30:59.925] [148597] (rtp_sender_audio.cc:306): First audio RTP packet sent to pacer
+[2024-12-15 16:31:00.858] [148411] (probe_controller.cc:434): kWaitingForProbingResult: timeout
+[2024-12-15 16:31:02.332] [148411] (rtcp_sender.cc:472): Sender Report {ssrc: 5150, ntp: 3943258262:1427848992, rtp_timestamp: 954336333, last_rtp_timestamp: 19200, last_frame_capture_time_ms: 2760278, now_us: 2760285976, rtp_rate: 8}
+[2024-12-15 16:31:08.025] [148419] (captured_audio_processor.cpp:93): Audio frames processed: 2997, noise canceller process time: 537 [ms]
+[2024-12-15 16:31:08.025] [148419] (captured_audio_processor.cpp:104): Audio frame: 2997, samples: 80, channels: 1, rate: 8000 [Hz], bytes: 2, level: 1940
+[2024-12-15 16:31:16.197] [148411] (audio_processing_impl.cc:911): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: High }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-12-15 16:31:16.197] [148411] (audio_processing_impl.cc:911): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: High }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-12-15 16:31:16.197] [148411] (audio_processing_impl.cc:911): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: High }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-12-15 16:31:16.197] [148411] (captured_audio_processor.cpp:127): SetNoiseCancellation: 1
+[2024-12-15 16:31:16.197] [148411] (bitrate_prober.cc:47): Bandwidth probing enabled, set to inactive
+[2024-12-15 16:31:16.197] [148411] (remote_estimator_proxy.cc:68): Maximum interval between transport feedback RTCP messages: 250 ms
+[2024-12-15 16:31:16.197] [148411] (aimd_rate_control.cc:97): Using aimd rate control with back off factor 0.85
+[2024-12-15 16:31:16.197] [148411] (remote_bitrate_estimator_single_stream.cc:64): RemoteBitrateEstimatorSingleStream: Instantiating.
+[2024-12-15 16:31:16.197] [148411] (pacing_controller.cc:110): PacedSender paused.
+[2024-12-15 16:31:16.198] [148411] (delay_manager.cc:62): Delay manager config: quantile=0.95 forget_factor=0.983 start_forget_weight=2 resample_interval_ms=500 use_reorder_optimizer=1 reorder_forget_factor=0.9993 ms_per_loss_percent=20
+[2024-12-15 16:31:16.198] [148411] (struct_parameters_parser.cc:115): No field with key: 'reinit_after_expands' (found in trial: "reinit_after_expands:100")
+[2024-12-15 16:31:16.198] [148411] (decision_logic.cc:81): NetEq decision logic config: enable_stable_delay_mode=0 combine_concealment_decision=0 packet_history_size_ms=2000 cng_timeout_ms=-1 deceleration_target_level_offset_ms=85
+[2024-12-15 16:31:16.198] [148411] (neteq_impl.cc:143): NetEq config: sample_rate_hz=48000, enable_post_decode_vad=true, max_packets_in_buffer=200, min_delay_ms=0, enable_fast_accelerate=false, enable_muted_state=true, enable_rtx_handling=false
+[2024-12-15 16:31:16.198] [148411] (audio_receive_stream.cc:110): AudioReceiveStreamImpl: 5150
+[2024-12-15 16:31:16.198] [148411] (call.cc:1220): UpdateAggregateNetworkState: aggregate_state change to up
+[2024-12-15 16:31:16.198] [148411] (pacing_controller.cc:117): PacedSender resumed.
+[2024-12-15 16:31:16.198] [148411] (rtp_transport_controller_send.cc:588): Creating fallback congestion controller
+[2024-12-15 16:31:16.198] [148411] (engine.cpp:294): DiscordFieldTrials::Lookup(WebRTC-Bwe-LossBasedBweV2) 0
+[2024-12-15 16:31:16.198] [148411] (alr_experiment.cc:80): Using ALR experiment settings: pacing factor: 1, max pacer queue length: 2875, ALR bandwidth usage percent: 80, ALR start budget level percent: 40, ALR end budget level percent: -60, ALR experiment group ID: 3
+[2024-12-15 16:31:16.198] [148411] (engine.cpp:311): DiscordFieldTrials::Lookup(WebRTC-BweWindowSizeInPackets) 0
+[2024-12-15 16:31:16.198] [148411] (engine.cpp:321): DiscordFieldTrials::Lookup(WebRTC-BWE-TrendlineEstimatorSettings) 3750ms
+[2024-12-15 16:31:16.198] [148411] (trendline_estimator.cc:197): Using Trendline filter for delay change estimation with settings sort:false,cap:false,beginning_packets:7,end_packets:7,cap_uncertainty:0,window_size:1000,min_window_size:50,max_window_duration_ms:3750 and no network state predictor
+[2024-12-15 16:31:16.198] [148411] (engine.cpp:311): DiscordFieldTrials::Lookup(WebRTC-BweWindowSizeInPackets) 0
+[2024-12-15 16:31:16.198] [148411] (engine.cpp:321): DiscordFieldTrials::Lookup(WebRTC-BWE-TrendlineEstimatorSettings) 3750ms
+[2024-12-15 16:31:16.198] [148411] (trendline_estimator.cc:197): Using Trendline filter for delay change estimation with settings sort:false,cap:false,beginning_packets:7,end_packets:7,cap_uncertainty:0,window_size:1000,min_window_size:50,max_window_duration_ms:3750 and no network state predictor
+[2024-12-15 16:31:16.198] [148411] (engine.cpp:331): DiscordFieldTrials::Lookup(WebRTC-BweAimdRateControlConfig) 0
+[2024-12-15 16:31:16.198] [148411] (aimd_rate_control.cc:97): Using aimd rate control with back off factor 0.85
+[2024-12-15 16:31:16.198] [148411] (delay_based_bwe.cc:84): Initialized DelayBasedBwe with separate audio overuse detectionenabled:false,packet_threshold:10,time_threshold:1 s
+[2024-12-15 16:31:16.198] [148411] (delay_based_bwe.cc:301): BWE Setting start bitrate to: 300 kbps
+[2024-12-15 16:31:16.198] [148411] (probe_controller.cc:300): Measured bitrate: 300 kbps Minimum to probe further: 1260 kbps upper limit: +inf bps
+[2024-12-15 16:31:16.198] [148411] (bitrate_prober.cc:111): Probe cluster (bitrate_bps:min bytes:min packets): (900000:1688:5, Inactive)
+[2024-12-15 16:31:16.198] [148411] (bitrate_prober.cc:111): Probe cluster (bitrate_bps:min bytes:min packets): (1800000:3375:5, Inactive)
+[2024-12-15 16:31:16.198] [148411] (bitrate_allocator.cc:393): Current BWE 300000
+[2024-12-15 16:31:16.198] [148411] (audio_device_impl.cc:857): Playing
+[2024-12-15 16:31:16.198] [148411] (audio_device_impl.cc:794): InitPlayout
+[2024-12-15 16:31:16.198] [148411] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-12-15 16:31:16.198] [148411] (audio_device_buffer.cc:188): SetPlayoutSampleRate(48000)
+[2024-12-15 16:31:16.198] [148411] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-12-15 16:31:16.198] [148411] (audio_device_impl.cc:800): output: 0
+[2024-12-15 16:31:16.198] [148411] (audio_device_impl.cc:832): StartPlayout
+[2024-12-15 16:31:16.198] [148411] (audio_device_impl.cc:857): Playing
+[2024-12-15 16:31:16.227] [148419] (audio_device_pulse_linux.cc:1856): Can't query latency
+[2024-12-15 16:31:16.228] [148411] (audio_device_impl.cc:839): output: 0
+[2024-12-15 16:31:16.228] [148411] (audio_coding_module.cc:192): Created
+[2024-12-15 16:31:16.228] [148411] (audio_send_stream.cc:164): AudioSendStream: 5150
+[2024-12-15 16:31:16.228] [148411] (audio_send_stream.cc:227): AudioSendStream::ConfigureStream: {rtp: {ssrc: 5150, extmap-allow-mixed: false, extensions: [], c_name: }, rtcp_report_interval_ms: 5000, send_transport: (Transport), min_bitrate_bps: -1, max_bitrate_bps: -1, has audio_network_adaptor_config: false, has_dscp: false, send_codec_spec: {nack_enabled: false, transport_cc_enabled: false, enable_non_sender_rtt: false, cng_payload_type: <unset>, red_payload_type: <unset>, payload_type: 120, format: {name: opus, clockrate_hz: 48000, num_channels: 2, parameters: {stereo: 0}}}}
+[2024-12-15 16:31:16.228] [148411] (audio_encoder_opus.cc:680): Set Opus bitrate to 32000 bps.
+[2024-12-15 16:31:16.228] [148411] (audio_send_stream.cc:861): Config is invalid: min_bitrate_bps=-1; max_bitrate_bps=-1; both expected greater or equal to 0
+[2024-12-15 16:31:16.228] [148411] (audio_send_stream.cc:861): Config is invalid: min_bitrate_bps=-1; max_bitrate_bps=-1; both expected greater or equal to 0
+[2024-12-15 16:31:16.228] [148411] (audio_device_impl.cc:888): Recording
+[2024-12-15 16:31:16.228] [148411] (audio_device_impl.cc:447): MicrophoneIsInitialized
+[2024-12-15 16:31:16.228] [148411] (audio_device_impl.cc:450): output: 0
+[2024-12-15 16:31:16.228] [148411] (audio_device_impl.cc:403): InitMicrophone
+[2024-12-15 16:31:16.228] [148411] (audio_device_impl.cc:888): Recording
+[2024-12-15 16:31:16.229] [148411] (call.cc:1220): UpdateAggregateNetworkState: aggregate_state change to down
+[2024-12-15 16:31:16.230] [148411] (pacing_controller.cc:110): PacedSender paused.
+[2024-12-15 16:31:16.230] [148411] (control_handler.cc:80): Bitrate estimate state changed, BWE: 300 kbps.
+[2024-12-15 16:31:16.230] [148411] (audio_send_stream.cc:179): ~AudioSendStream: 5150
+[2024-12-15 16:31:16.230] [148411] (voice_activity_detector.cpp:54): Attempting to reset while uninitialized
+[2024-12-15 16:31:16.230] [148419] (noise_canceller.cpp:36): Creating noise canceller, channels: 1, rate 48000, duration: 10 [ms], buffer size: 960 [bytes]
+[2024-12-15 16:31:16.240] [148419] (matched_filter.cc:141): AEC3: Pre echo configuration:  threshold = 0.5, mode =  3.
+[2024-12-15 16:31:16.240] [148419] (transparent_mode.cc:239): AEC3 Transparent Mode: Legacy
+[2024-12-15 16:31:16.240] [148419] (echo_canceller3.cc:793): AEC3 created with sample rate: 48000 Hz, num render channels: 1, num capture channels: 1
+[2024-12-15 16:31:16.241] [148633] (rtp_sender_audio.cc:306): First audio RTP packet sent to pacer
+[2024-12-15 16:31:16.933] [148419] (block_processor.cc:178): Delay changed to 18 at block 179
+[2024-12-15 16:31:17.199] [148411] (probe_controller.cc:434): kWaitingForProbingResult: timeout
+[2024-12-15 16:31:17.948] [148416] (audio_device_buffer.cc:447): [REC : 8116msec, 48kHz] callbacks: 810, samples: 388800, rate: 47905, rate diff: 0%, level: 13394
+[2024-12-15 16:31:17.948] [148416] (audio_device_buffer.cc:473): [PLAY: 8116msec, 48kHz] callbacks: 174, samples: 83520, rate: 10291, rate diff: 79%, level: 497
+[2024-12-15 16:31:18.046] [148419] (captured_audio_processor.cpp:93): Audio frames processed: 3999, noise canceller process time: 835 [ms]
+[2024-12-15 16:31:18.046] [148419] (captured_audio_processor.cpp:104): Audio frame: 3999, samples: 480, channels: 1, rate: 48000 [Hz], bytes: 2, level: 22
+[2024-12-15 16:31:18.730] [148411] (rtcp_sender.cc:472): Sender Report {ssrc: 5150, ntp: 3943258278:3137465019, rtp_timestamp: 138220089, last_rtp_timestamp: 119040, last_frame_capture_time_ms: 2776658, now_us: 2776684027, rtp_rate: 48}
+[2024-12-15 16:31:19.247] [148419] (block_processor.cc:178): Delay changed to 14 at block 755
+[2024-12-15 16:31:19.461] [148411] (audio_processing_impl.cc:911): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: High }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-12-15 16:31:19.461] [148411] (audio_processing_impl.cc:911): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: High }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-12-15 16:31:19.461] [148411] (audio_processing_impl.cc:911): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: High }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-12-15 16:31:19.461] [148411] (captured_audio_processor.cpp:127): SetNoiseCancellation: 1
+[2024-12-15 16:31:19.462] [148411] (audio_device_impl.cc:888): Recording
+[2024-12-15 16:31:19.462] [148411] (audio_device_impl.cc:877): StopRecording
+[2024-12-15 16:31:19.462] [148411] (audio_device_buffer.cc:175): HISTOGRAM(WebRTC.Audio.RecordedOnlyZeros): 0
+[2024-12-15 16:31:19.462] [148411] (audio_device_buffer.cc:178): total recording time: 19630
+[2024-12-15 16:31:19.462] [148411] (audio_device_impl.cc:881): output: 0
+[2024-12-15 16:31:19.462] [148633] (audio_encoder_opus.cc:680): Set Opus bitrate to 32000 bps.
+[2024-12-15 16:31:19.462] [148411] (audio_device_impl.cc:877): StopRecording
+[2024-12-15 16:31:19.462] [148411] (audio_device_impl.cc:881): output: 0
+[2024-12-15 16:31:19.462] [148411] (audio_send_stream.cc:179): ~AudioSendStream: 5150
+[2024-12-15 16:31:19.462] [148411] (audio_device_impl.cc:846): StopPlayout
+[2024-12-15 16:31:19.462] [148411] (audio_device_buffer.cc:146): total playout time: 3264
+[2024-12-15 16:31:19.462] [148411] (audio_device_impl.cc:850): output: 0
+[2024-12-15 16:31:19.462] [148411] (call.cc:1220): UpdateAggregateNetworkState: aggregate_state change to down
+[2024-12-15 16:31:19.462] [148411] (pacing_controller.cc:110): PacedSender paused.
+[2024-12-15 16:31:19.462] [148411] (control_handler.cc:80): Bitrate estimate state changed, BWE: 300 kbps.
+[2024-12-15 16:31:19.462] [148411] (audio_receive_stream.cc:137): ~AudioReceiveStreamImpl: 5150
+[2024-12-15 16:31:19.462] [148411] (voice_activity_detector.cpp:54): Attempting to reset while uninitialized
+[2024-12-15 16:31:19.462] [148411] (audio_coding.cpp:156): Using software Opus decoder
+[2024-12-15 16:31:19.462] [148411] (audio_coding.cpp:173): Using software Opus encoder
+[2024-12-15 16:31:19.462] [148411] (bitrate_prober.cc:47): Bandwidth probing enabled, set to inactive
+[2024-12-15 16:31:19.463] [148411] (remote_estimator_proxy.cc:68): Maximum interval between transport feedback RTCP messages: 250 ms
+[2024-12-15 16:31:19.463] [148411] (aimd_rate_control.cc:97): Using aimd rate control with back off factor 0.85
+[2024-12-15 16:31:19.463] [148411] (remote_bitrate_estimator_single_stream.cc:64): RemoteBitrateEstimatorSingleStream: Instantiating.
+[2024-12-15 16:31:19.463] [148411] (pacing_controller.cc:110): PacedSender paused.
+[2024-12-15 16:31:19.463] [148411] (audio_coding_module.cc:192): Created
+[2024-12-15 16:31:19.463] [148411] (audio_send_stream.cc:164): AudioSendStream: 5150
+[2024-12-15 16:31:19.463] [148411] (audio_send_stream.cc:227): AudioSendStream::ConfigureStream: {rtp: {ssrc: 5150, extmap-allow-mixed: false, extensions: [], c_name: }, rtcp_report_interval_ms: 5000, send_transport: (Transport), min_bitrate_bps: -1, max_bitrate_bps: -1, has audio_network_adaptor_config: false, has_dscp: false, send_codec_spec: {nack_enabled: false, transport_cc_enabled: false, enable_non_sender_rtt: false, cng_payload_type: <unset>, red_payload_type: <unset>, payload_type: 0, format: {name: pcmu, clockrate_hz: 8000, num_channels: 1, parameters: {}}}}
+[2024-12-15 16:31:19.463] [148411] (audio_send_stream.cc:861): Config is invalid: min_bitrate_bps=-1; max_bitrate_bps=-1; both expected greater or equal to 0
+[2024-12-15 16:31:19.463] [148411] (audio_send_stream.cc:861): Config is invalid: min_bitrate_bps=-1; max_bitrate_bps=-1; both expected greater or equal to 0
+[2024-12-15 16:31:19.463] [148411] (call.cc:1220): UpdateAggregateNetworkState: aggregate_state change to up
+[2024-12-15 16:31:19.463] [148411] (pacing_controller.cc:117): PacedSender resumed.
+[2024-12-15 16:31:19.463] [148411] (rtp_transport_controller_send.cc:588): Creating fallback congestion controller
+[2024-12-15 16:31:19.463] [148411] (engine.cpp:294): DiscordFieldTrials::Lookup(WebRTC-Bwe-LossBasedBweV2) 0
+[2024-12-15 16:31:19.463] [148411] (alr_experiment.cc:80): Using ALR experiment settings: pacing factor: 1, max pacer queue length: 2875, ALR bandwidth usage percent: 80, ALR start budget level percent: 40, ALR end budget level percent: -60, ALR experiment group ID: 3
+[2024-12-15 16:31:19.463] [148411] (engine.cpp:311): DiscordFieldTrials::Lookup(WebRTC-BweWindowSizeInPackets) 0
+[2024-12-15 16:31:19.463] [148411] (engine.cpp:321): DiscordFieldTrials::Lookup(WebRTC-BWE-TrendlineEstimatorSettings) 3750ms
+[2024-12-15 16:31:19.463] [148411] (trendline_estimator.cc:197): Using Trendline filter for delay change estimation with settings sort:false,cap:false,beginning_packets:7,end_packets:7,cap_uncertainty:0,window_size:1000,min_window_size:50,max_window_duration_ms:3750 and no network state predictor
+[2024-12-15 16:31:19.463] [148411] (engine.cpp:311): DiscordFieldTrials::Lookup(WebRTC-BweWindowSizeInPackets) 0
+[2024-12-15 16:31:19.463] [148411] (engine.cpp:321): DiscordFieldTrials::Lookup(WebRTC-BWE-TrendlineEstimatorSettings) 3750ms
+[2024-12-15 16:31:19.463] [148411] (trendline_estimator.cc:197): Using Trendline filter for delay change estimation with settings sort:false,cap:false,beginning_packets:7,end_packets:7,cap_uncertainty:0,window_size:1000,min_window_size:50,max_window_duration_ms:3750 and no network state predictor
+[2024-12-15 16:31:19.463] [148411] (engine.cpp:331): DiscordFieldTrials::Lookup(WebRTC-BweAimdRateControlConfig) 0
+[2024-12-15 16:31:19.463] [148411] (aimd_rate_control.cc:97): Using aimd rate control with back off factor 0.85
+[2024-12-15 16:31:19.463] [148411] (delay_based_bwe.cc:84): Initialized DelayBasedBwe with separate audio overuse detectionenabled:false,packet_threshold:10,time_threshold:1 s
+[2024-12-15 16:31:19.463] [148411] (delay_based_bwe.cc:301): BWE Setting start bitrate to: 300 kbps
+[2024-12-15 16:31:19.463] [148411] (probe_controller.cc:300): Measured bitrate: 300 kbps Minimum to probe further: 1260 kbps upper limit: +inf bps
+[2024-12-15 16:31:19.463] [148411] (bitrate_prober.cc:111): Probe cluster (bitrate_bps:min bytes:min packets): (900000:1688:5, Inactive)
+[2024-12-15 16:31:19.463] [148411] (bitrate_prober.cc:111): Probe cluster (bitrate_bps:min bytes:min packets): (1800000:3375:5, Inactive)
+[2024-12-15 16:31:19.463] [148411] (bitrate_allocator.cc:393): Current BWE 300000
+[2024-12-15 16:31:19.463] [148411] (audio_device_impl.cc:888): Recording
+[2024-12-15 16:31:19.463] [148411] (audio_device_impl.cc:807): InitRecording
+[2024-12-15 16:31:19.463] [148411] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-12-15 16:31:19.465] [148411] (audio_device_buffer.cc:182): SetRecordingSampleRate(48000)
+[2024-12-15 16:31:19.465] [148411] (audio_device_buffer.cc:202): SetRecordingChannels(1)
+[2024-12-15 16:31:19.465] [148411] (audio_device_impl.cc:813): output: 0
+[2024-12-15 16:31:19.465] [148411] (audio_device_impl.cc:863): StartRecording
+[2024-12-15 16:31:19.465] [148411] (audio_device_impl.cc:888): Recording
+[2024-12-15 16:31:19.509] [148411] (audio_device_impl.cc:870): output: 0
+[2024-12-15 16:31:19.509] [148411] (audio_device_impl.cc:447): MicrophoneIsInitialized
+[2024-12-15 16:31:19.509] [148411] (audio_device_impl.cc:450): output: 0
+[2024-12-15 16:31:19.509] [148411] (audio_device_impl.cc:403): InitMicrophone
+[2024-12-15 16:31:19.509] [148411] (audio_device_impl.cc:888): Recording
+[2024-12-15 16:31:19.539] [148419] (noise_canceller.cpp:36): Creating noise canceller, channels: 1, rate 8000, duration: 10 [ms], buffer size: 160 [bytes]
+[2024-12-15 16:31:19.540] [148419] (matched_filter.cc:141): AEC3: Pre echo configuration:  threshold = 0.5, mode =  3.
+[2024-12-15 16:31:19.540] [148419] (transparent_mode.cc:239): AEC3 Transparent Mode: Legacy
+[2024-12-15 16:31:19.540] [148419] (echo_canceller3.cc:793): AEC3 created with sample rate: 16000 Hz, num render channels: 1, num capture channels: 1
+[2024-12-15 16:31:19.541] [148642] (rtp_sender_audio.cc:306): First audio RTP packet sent to pacer
+[2024-12-15 16:31:20.490] [148411] (probe_controller.cc:434): kWaitingForProbingResult: timeout
+[2024-12-15 16:31:21.963] [148411] (rtcp_sender.cc:472): Sender Report {ssrc: 5150, ntp: 3943258281:4139021328, rtp_timestamp: 3854800239, last_rtp_timestamp: 19200, last_frame_capture_time_ms: 2779894, now_us: 2779917220, rtp_rate: 8}
+[2024-12-15 16:31:27.956] [148416] (audio_device_buffer.cc:447): [REC : 8122msec, 48kHz] callbacks: 813, samples: 390240, rate: 48047, rate diff: 0%, level: 1452
+[2024-12-15 16:31:28.062] [148419] (captured_audio_processor.cpp:93): Audio frames processed: 4995, noise canceller process time: 1122 [ms]
+[2024-12-15 16:31:28.062] [148419] (captured_audio_processor.cpp:104): Audio frame: 4995, samples: 80, channels: 1, rate: 8000 [Hz], bytes: 2, level: 295
+[2024-12-15 16:31:37.962] [148416] (audio_device_buffer.cc:447): [REC : 8128msec, 48kHz] callbacks: 813, samples: 390240, rate: 48012, rate diff: 0%, level: 3098
+[2024-12-15 16:31:38.078] [148419] (captured_audio_processor.cpp:93): Audio frames processed: 5997, noise canceller process time: 1376 [ms]
+[2024-12-15 16:31:38.078] [148419] (captured_audio_processor.cpp:104): Audio frame: 5997, samples: 80, channels: 1, rate: 8000 [Hz], bytes: 2, level: 33
+[2024-12-15 16:31:47.969] [148416] (audio_device_buffer.cc:447): [REC : 8134msec, 48kHz] callbacks: 813, samples: 390240, rate: 47976, rate diff: 0%, level: 8120
+[2024-12-15 16:31:48.099] [148419] (captured_audio_processor.cpp:93): Audio frames processed: 6999, noise canceller process time: 1627 [ms]
+[2024-12-15 16:31:48.099] [148419] (captured_audio_processor.cpp:104): Audio frame: 6999, samples: 80, channels: 1, rate: 8000 [Hz], bytes: 2, level: 1006
+[2024-12-15 16:31:49.508] [148419] (agc_manager_direct.cc:134): Input clipping rate: 0%
+[2024-12-15 16:31:56.573] [148411] (rtcp_sender.cc:472): Sender Report {ssrc: 5150, ntp: 3943258316:2461596081, rtp_timestamp: 3855077135, last_rtp_timestamp: 296160, last_frame_capture_time_ms: 2814512, now_us: 2814526664, rtp_rate: 8}
+[2024-12-15 16:31:57.976] [148416] (audio_device_buffer.cc:447): [REC : 8140msec, 48kHz] callbacks: 816, samples: 391680, rate: 48118, rate diff: 0%, level: 6979
+[2024-12-15 16:31:58.121] [148419] (captured_audio_processor.cpp:93): Audio frames processed: 8001, noise canceller process time: 1874 [ms]
+[2024-12-15 16:31:58.121] [148419] (captured_audio_processor.cpp:104): Audio frame: 8001, samples: 80, channels: 1, rate: 8000 [Hz], bytes: 2, level: 958
+[2024-12-15 16:32:07.983] [148416] (audio_device_buffer.cc:447): [REC : 8146msec, 48kHz] callbacks: 813, samples: 390240, rate: 47906, rate diff: 0%, level: 10073
+[2024-12-15 16:32:08.143] [148419] (captured_audio_processor.cpp:93): Audio frames processed: 9003, noise canceller process time: 2122 [ms]
+[2024-12-15 16:32:08.143] [148419] (captured_audio_processor.cpp:104): Audio frame: 9003, samples: 80, channels: 1, rate: 8000 [Hz], bytes: 2, level: 197
+[2024-12-15 16:32:17.989] [148416] (audio_device_buffer.cc:447): [REC : 8152msec, 48kHz] callbacks: 816, samples: 391680, rate: 48047, rate diff: 0%, level: 10951
+[2024-12-15 16:32:18.158] [148419] (captured_audio_processor.cpp:93): Audio frames processed: 10005, noise canceller process time: 2362 [ms]
+[2024-12-15 16:32:18.158] [148419] (captured_audio_processor.cpp:104): Audio frame: 10005, samples: 80, channels: 1, rate: 8000 [Hz], bytes: 2, level: 0
+[2024-12-15 16:32:19.508] [148419] (agc_manager_direct.cc:134): Input clipping rate: 0%
+[2024-12-15 16:32:21.782] [148411] (audio_processing_impl.cc:911): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: High }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-12-15 16:32:21.782] [148411] (audio_processing_impl.cc:911): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: High }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-12-15 16:32:21.782] [148411] (audio_processing_impl.cc:911): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: High }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-12-15 16:32:21.782] [148411] (captured_audio_processor.cpp:127): SetNoiseCancellation: 1
+[2024-12-15 16:32:21.782] [148411] (bitrate_prober.cc:47): Bandwidth probing enabled, set to inactive
+[2024-12-15 16:32:21.782] [148411] (remote_estimator_proxy.cc:68): Maximum interval between transport feedback RTCP messages: 250 ms
+[2024-12-15 16:32:21.782] [148411] (aimd_rate_control.cc:97): Using aimd rate control with back off factor 0.85
+[2024-12-15 16:32:21.782] [148411] (remote_bitrate_estimator_single_stream.cc:64): RemoteBitrateEstimatorSingleStream: Instantiating.
+[2024-12-15 16:32:21.782] [148411] (pacing_controller.cc:110): PacedSender paused.
+[2024-12-15 16:32:21.782] [148411] (delay_manager.cc:62): Delay manager config: quantile=0.95 forget_factor=0.983 start_forget_weight=2 resample_interval_ms=500 use_reorder_optimizer=1 reorder_forget_factor=0.9993 ms_per_loss_percent=20
+[2024-12-15 16:32:21.782] [148411] (struct_parameters_parser.cc:115): No field with key: 'reinit_after_expands' (found in trial: "reinit_after_expands:100")
+[2024-12-15 16:32:21.782] [148411] (decision_logic.cc:81): NetEq decision logic config: enable_stable_delay_mode=0 combine_concealment_decision=0 packet_history_size_ms=2000 cng_timeout_ms=-1 deceleration_target_level_offset_ms=85
+[2024-12-15 16:32:21.782] [148411] (neteq_impl.cc:143): NetEq config: sample_rate_hz=48000, enable_post_decode_vad=true, max_packets_in_buffer=200, min_delay_ms=0, enable_fast_accelerate=false, enable_muted_state=true, enable_rtx_handling=false
+[2024-12-15 16:32:21.782] [148411] (audio_receive_stream.cc:110): AudioReceiveStreamImpl: 5150
+[2024-12-15 16:32:21.782] [148411] (call.cc:1220): UpdateAggregateNetworkState: aggregate_state change to up
+[2024-12-15 16:32:21.782] [148411] (pacing_controller.cc:117): PacedSender resumed.
+[2024-12-15 16:32:21.782] [148411] (rtp_transport_controller_send.cc:588): Creating fallback congestion controller
+[2024-12-15 16:32:21.782] [148411] (engine.cpp:294): DiscordFieldTrials::Lookup(WebRTC-Bwe-LossBasedBweV2) 0
+[2024-12-15 16:32:21.782] [148411] (alr_experiment.cc:80): Using ALR experiment settings: pacing factor: 1, max pacer queue length: 2875, ALR bandwidth usage percent: 80, ALR start budget level percent: 40, ALR end budget level percent: -60, ALR experiment group ID: 3
+[2024-12-15 16:32:21.782] [148411] (engine.cpp:311): DiscordFieldTrials::Lookup(WebRTC-BweWindowSizeInPackets) 0
+[2024-12-15 16:32:21.782] [148411] (engine.cpp:321): DiscordFieldTrials::Lookup(WebRTC-BWE-TrendlineEstimatorSettings) 3750ms
+[2024-12-15 16:32:21.782] [148411] (trendline_estimator.cc:197): Using Trendline filter for delay change estimation with settings sort:false,cap:false,beginning_packets:7,end_packets:7,cap_uncertainty:0,window_size:1000,min_window_size:50,max_window_duration_ms:3750 and no network state predictor
+[2024-12-15 16:32:21.782] [148411] (engine.cpp:311): DiscordFieldTrials::Lookup(WebRTC-BweWindowSizeInPackets) 0
+[2024-12-15 16:32:21.782] [148411] (engine.cpp:321): DiscordFieldTrials::Lookup(WebRTC-BWE-TrendlineEstimatorSettings) 3750ms
+[2024-12-15 16:32:21.782] [148411] (trendline_estimator.cc:197): Using Trendline filter for delay change estimation with settings sort:false,cap:false,beginning_packets:7,end_packets:7,cap_uncertainty:0,window_size:1000,min_window_size:50,max_window_duration_ms:3750 and no network state predictor
+[2024-12-15 16:32:21.782] [148411] (engine.cpp:331): DiscordFieldTrials::Lookup(WebRTC-BweAimdRateControlConfig) 0
+[2024-12-15 16:32:21.782] [148411] (aimd_rate_control.cc:97): Using aimd rate control with back off factor 0.85
+[2024-12-15 16:32:21.782] [148411] (delay_based_bwe.cc:84): Initialized DelayBasedBwe with separate audio overuse detectionenabled:false,packet_threshold:10,time_threshold:1 s
+[2024-12-15 16:32:21.782] [148411] (delay_based_bwe.cc:301): BWE Setting start bitrate to: 300 kbps
+[2024-12-15 16:32:21.783] [148411] (probe_controller.cc:300): Measured bitrate: 300 kbps Minimum to probe further: 1260 kbps upper limit: +inf bps
+[2024-12-15 16:32:21.783] [148411] (bitrate_prober.cc:111): Probe cluster (bitrate_bps:min bytes:min packets): (900000:1688:5, Inactive)
+[2024-12-15 16:32:21.783] [148411] (bitrate_prober.cc:111): Probe cluster (bitrate_bps:min bytes:min packets): (1800000:3375:5, Inactive)
+[2024-12-15 16:32:21.783] [148411] (bitrate_allocator.cc:393): Current BWE 300000
+[2024-12-15 16:32:21.783] [148411] (audio_device_impl.cc:857): Playing
+[2024-12-15 16:32:21.783] [148411] (audio_device_impl.cc:794): InitPlayout
+[2024-12-15 16:32:21.783] [148411] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-12-15 16:32:21.783] [148411] (audio_device_buffer.cc:188): SetPlayoutSampleRate(48000)
+[2024-12-15 16:32:21.783] [148411] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-12-15 16:32:21.783] [148411] (audio_device_impl.cc:800): output: 0
+[2024-12-15 16:32:21.784] [148411] (audio_device_impl.cc:832): StartPlayout
+[2024-12-15 16:32:21.784] [148411] (audio_device_impl.cc:857): Playing
+[2024-12-15 16:32:21.817] [148419] (audio_device_pulse_linux.cc:1856): Can't query latency
+[2024-12-15 16:32:21.818] [148411] (audio_device_impl.cc:839): output: 0
+[2024-12-15 16:32:21.819] [148411] (audio_coding_module.cc:192): Created
+[2024-12-15 16:32:21.819] [148411] (audio_send_stream.cc:164): AudioSendStream: 5150
+[2024-12-15 16:32:21.819] [148411] (audio_send_stream.cc:227): AudioSendStream::ConfigureStream: {rtp: {ssrc: 5150, extmap-allow-mixed: false, extensions: [], c_name: }, rtcp_report_interval_ms: 5000, send_transport: (Transport), min_bitrate_bps: -1, max_bitrate_bps: -1, has audio_network_adaptor_config: false, has_dscp: false, send_codec_spec: {nack_enabled: false, transport_cc_enabled: false, enable_non_sender_rtt: false, cng_payload_type: <unset>, red_payload_type: <unset>, payload_type: 120, format: {name: opus, clockrate_hz: 48000, num_channels: 2, parameters: {stereo: 0}}}}
+[2024-12-15 16:32:21.819] [148411] (audio_encoder_opus.cc:680): Set Opus bitrate to 32000 bps.
+[2024-12-15 16:32:21.819] [148411] (audio_send_stream.cc:861): Config is invalid: min_bitrate_bps=-1; max_bitrate_bps=-1; both expected greater or equal to 0
+[2024-12-15 16:32:21.819] [148411] (audio_send_stream.cc:861): Config is invalid: min_bitrate_bps=-1; max_bitrate_bps=-1; both expected greater or equal to 0
+[2024-12-15 16:32:21.819] [148411] (audio_device_impl.cc:888): Recording
+[2024-12-15 16:32:21.819] [148411] (audio_device_impl.cc:447): MicrophoneIsInitialized
+[2024-12-15 16:32:21.819] [148411] (audio_device_impl.cc:450): output: 0
+[2024-12-15 16:32:21.819] [148411] (audio_device_impl.cc:403): InitMicrophone
+[2024-12-15 16:32:21.819] [148411] (audio_device_impl.cc:888): Recording
+[2024-12-15 16:32:21.819] [148411] (call.cc:1220): UpdateAggregateNetworkState: aggregate_state change to down
+[2024-12-15 16:32:21.819] [148411] (pacing_controller.cc:110): PacedSender paused.
+[2024-12-15 16:32:21.819] [148411] (control_handler.cc:80): Bitrate estimate state changed, BWE: 300 kbps.
+[2024-12-15 16:32:21.819] [148411] (audio_send_stream.cc:179): ~AudioSendStream: 5150
+[2024-12-15 16:32:21.819] [148411] (voice_activity_detector.cpp:54): Attempting to reset while uninitialized
+[2024-12-15 16:32:21.822] [148419] (noise_canceller.cpp:36): Creating noise canceller, channels: 1, rate 48000, duration: 10 [ms], buffer size: 960 [bytes]
+[2024-12-15 16:32:21.830] [148419] (matched_filter.cc:141): AEC3: Pre echo configuration:  threshold = 0.5, mode =  3.
+[2024-12-15 16:32:21.830] [148419] (transparent_mode.cc:239): AEC3 Transparent Mode: Legacy
+[2024-12-15 16:32:21.830] [148419] (echo_canceller3.cc:793): AEC3 created with sample rate: 48000 Hz, num render channels: 1, num capture channels: 1
+[2024-12-15 16:32:21.831] [148684] (rtp_sender_audio.cc:306): First audio RTP packet sent to pacer
+[2024-12-15 16:32:22.783] [148411] (probe_controller.cc:434): kWaitingForProbingResult: timeout
+[2024-12-15 16:32:26.063] [148411] (audio_processing_impl.cc:911): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: High }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-12-15 16:32:26.063] [148411] (audio_processing_impl.cc:911): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: High }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-12-15 16:32:26.063] [148411] (audio_processing_impl.cc:911): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: High }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+[2024-12-15 16:32:26.063] [148411] (captured_audio_processor.cpp:127): SetNoiseCancellation: 1
+[2024-12-15 16:32:26.063] [148411] (audio_device_impl.cc:888): Recording
+[2024-12-15 16:32:26.063] [148411] (audio_device_impl.cc:877): StopRecording
+[2024-12-15 16:32:26.063] [148411] (audio_device_buffer.cc:175): HISTOGRAM(WebRTC.Audio.RecordedOnlyZeros): 0
+[2024-12-15 16:32:26.064] [148411] (audio_device_buffer.cc:178): total recording time: 66599
+[2024-12-15 16:32:26.064] [148411] (audio_device_impl.cc:881): output: 0
+[2024-12-15 16:32:26.064] [148684] (audio_encoder_opus.cc:680): Set Opus bitrate to 32000 bps.
+[2024-12-15 16:32:26.064] [148411] (audio_device_impl.cc:877): StopRecording
+[2024-12-15 16:32:26.064] [148411] (audio_device_impl.cc:881): output: 0
+[2024-12-15 16:32:26.064] [148411] (audio_send_stream.cc:179): ~AudioSendStream: 5150
+[2024-12-15 16:32:26.065] [148411] (audio_device_impl.cc:846): StopPlayout
+[2024-12-15 16:32:26.065] [148411] (audio_device_buffer.cc:146): total playout time: 4281
+[2024-12-15 16:32:26.065] [148411] (audio_device_impl.cc:850): output: 0
+[2024-12-15 16:32:26.065] [148411] (call.cc:1220): UpdateAggregateNetworkState: aggregate_state change to down
+[2024-12-15 16:32:26.065] [148411] (pacing_controller.cc:110): PacedSender paused.
+[2024-12-15 16:32:26.065] [148411] (control_handler.cc:80): Bitrate estimate state changed, BWE: 300 kbps.
+[2024-12-15 16:32:26.065] [148411] (audio_receive_stream.cc:137): ~AudioReceiveStreamImpl: 5150
+[2024-12-15 16:32:26.065] [148411] (voice_activity_detector.cpp:54): Attempting to reset while uninitialized
+[2024-12-15 16:32:26.070] [148411] (audio_coding.cpp:156): Using software Opus decoder
+[2024-12-15 16:32:26.070] [148411] (audio_coding.cpp:173): Using software Opus encoder
+[2024-12-15 16:32:26.070] [148411] (bitrate_prober.cc:47): Bandwidth probing enabled, set to inactive
+[2024-12-15 16:32:26.070] [148411] (remote_estimator_proxy.cc:68): Maximum interval between transport feedback RTCP messages: 250 ms
+[2024-12-15 16:32:26.070] [148411] (aimd_rate_control.cc:97): Using aimd rate control with back off factor 0.85
+[2024-12-15 16:32:26.070] [148411] (remote_bitrate_estimator_single_stream.cc:64): RemoteBitrateEstimatorSingleStream: Instantiating.
+[2024-12-15 16:32:26.070] [148411] (pacing_controller.cc:110): PacedSender paused.
+[2024-12-15 16:32:26.070] [148411] (audio_coding_module.cc:192): Created
+[2024-12-15 16:32:26.070] [148411] (audio_send_stream.cc:164): AudioSendStream: 5150
+[2024-12-15 16:32:26.070] [148411] (audio_send_stream.cc:227): AudioSendStream::ConfigureStream: {rtp: {ssrc: 5150, extmap-allow-mixed: false, extensions: [], c_name: }, rtcp_report_interval_ms: 5000, send_transport: (Transport), min_bitrate_bps: -1, max_bitrate_bps: -1, has audio_network_adaptor_config: false, has_dscp: false, send_codec_spec: {nack_enabled: false, transport_cc_enabled: false, enable_non_sender_rtt: false, cng_payload_type: <unset>, red_payload_type: <unset>, payload_type: 0, format: {name: pcmu, clockrate_hz: 8000, num_channels: 1, parameters: {}}}}
+[2024-12-15 16:32:26.070] [148411] (audio_send_stream.cc:861): Config is invalid: min_bitrate_bps=-1; max_bitrate_bps=-1; both expected greater or equal to 0
+[2024-12-15 16:32:26.070] [148411] (audio_send_stream.cc:861): Config is invalid: min_bitrate_bps=-1; max_bitrate_bps=-1; both expected greater or equal to 0
+[2024-12-15 16:32:26.070] [148411] (call.cc:1220): UpdateAggregateNetworkState: aggregate_state change to up
+[2024-12-15 16:32:26.070] [148411] (pacing_controller.cc:117): PacedSender resumed.
+[2024-12-15 16:32:26.070] [148411] (rtp_transport_controller_send.cc:588): Creating fallback congestion controller
+[2024-12-15 16:32:26.070] [148411] (engine.cpp:294): DiscordFieldTrials::Lookup(WebRTC-Bwe-LossBasedBweV2) 0
+[2024-12-15 16:32:26.070] [148411] (alr_experiment.cc:80): Using ALR experiment settings: pacing factor: 1, max pacer queue length: 2875, ALR bandwidth usage percent: 80, ALR start budget level percent: 40, ALR end budget level percent: -60, ALR experiment group ID: 3
+[2024-12-15 16:32:26.070] [148411] (engine.cpp:311): DiscordFieldTrials::Lookup(WebRTC-BweWindowSizeInPackets) 0
+[2024-12-15 16:32:26.070] [148411] (engine.cpp:321): DiscordFieldTrials::Lookup(WebRTC-BWE-TrendlineEstimatorSettings) 3750ms
+[2024-12-15 16:32:26.070] [148411] (trendline_estimator.cc:197): Using Trendline filter for delay change estimation with settings sort:false,cap:false,beginning_packets:7,end_packets:7,cap_uncertainty:0,window_size:1000,min_window_size:50,max_window_duration_ms:3750 and no network state predictor
+[2024-12-15 16:32:26.070] [148411] (engine.cpp:311): DiscordFieldTrials::Lookup(WebRTC-BweWindowSizeInPackets) 0
+[2024-12-15 16:32:26.070] [148411] (engine.cpp:321): DiscordFieldTrials::Lookup(WebRTC-BWE-TrendlineEstimatorSettings) 3750ms
+[2024-12-15 16:32:26.070] [148411] (trendline_estimator.cc:197): Using Trendline filter for delay change estimation with settings sort:false,cap:false,beginning_packets:7,end_packets:7,cap_uncertainty:0,window_size:1000,min_window_size:50,max_window_duration_ms:3750 and no network state predictor
+[2024-12-15 16:32:26.070] [148411] (engine.cpp:331): DiscordFieldTrials::Lookup(WebRTC-BweAimdRateControlConfig) 0
+[2024-12-15 16:32:26.070] [148411] (aimd_rate_control.cc:97): Using aimd rate control with back off factor 0.85
+[2024-12-15 16:32:26.070] [148411] (delay_based_bwe.cc:84): Initialized DelayBasedBwe with separate audio overuse detectionenabled:false,packet_threshold:10,time_threshold:1 s
+[2024-12-15 16:32:26.070] [148411] (delay_based_bwe.cc:301): BWE Setting start bitrate to: 300 kbps
+[2024-12-15 16:32:26.070] [148411] (probe_controller.cc:300): Measured bitrate: 300 kbps Minimum to probe further: 1260 kbps upper limit: +inf bps
+[2024-12-15 16:32:26.070] [148411] (bitrate_prober.cc:111): Probe cluster (bitrate_bps:min bytes:min packets): (900000:1688:5, Inactive)
+[2024-12-15 16:32:26.070] [148411] (bitrate_prober.cc:111): Probe cluster (bitrate_bps:min bytes:min packets): (1800000:3375:5, Inactive)
+[2024-12-15 16:32:26.070] [148411] (bitrate_allocator.cc:393): Current BWE 300000
+[2024-12-15 16:32:26.070] [148411] (audio_device_impl.cc:888): Recording
+[2024-12-15 16:32:26.070] [148411] (audio_device_impl.cc:807): InitRecording
+[2024-12-15 16:32:26.070] [148411] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-12-15 16:32:26.071] [148411] (audio_device_buffer.cc:182): SetRecordingSampleRate(48000)
+[2024-12-15 16:32:26.071] [148411] (audio_device_buffer.cc:202): SetRecordingChannels(1)
+[2024-12-15 16:32:26.071] [148411] (audio_device_impl.cc:813): output: 0
+[2024-12-15 16:32:26.071] [148411] (audio_device_impl.cc:863): StartRecording
+[2024-12-15 16:32:26.071] [148411] (audio_device_impl.cc:888): Recording
+[2024-12-15 16:32:26.136] [148411] (audio_device_impl.cc:870): output: 0
+[2024-12-15 16:32:26.136] [148411] (audio_device_impl.cc:447): MicrophoneIsInitialized
+[2024-12-15 16:32:26.136] [148411] (audio_device_impl.cc:450): output: 0
+[2024-12-15 16:32:26.136] [148411] (audio_device_impl.cc:403): InitMicrophone
+[2024-12-15 16:32:26.136] [148411] (audio_device_impl.cc:888): Recording
+[2024-12-15 16:32:26.163] [148419] (noise_canceller.cpp:36): Creating noise canceller, channels: 1, rate 8000, duration: 10 [ms], buffer size: 160 [bytes]
+[2024-12-15 16:32:26.164] [148419] (matched_filter.cc:141): AEC3: Pre echo configuration:  threshold = 0.5, mode =  3.
+[2024-12-15 16:32:26.164] [148419] (transparent_mode.cc:239): AEC3 Transparent Mode: Legacy
+[2024-12-15 16:32:26.164] [148419] (echo_canceller3.cc:793): AEC3 created with sample rate: 16000 Hz, num render channels: 1, num capture channels: 1
+[2024-12-15 16:32:26.165] [148693] (rtp_sender_audio.cc:306): First audio RTP packet sent to pacer
+[2024-12-15 16:32:27.096] [148411] (probe_controller.cc:434): kWaitingForProbingResult: timeout
+[2024-12-15 16:32:28.174] [148419] (captured_audio_processor.cpp:93): Audio frames processed: 10998, noise canceller process time: 2743 [ms]
+[2024-12-15 16:32:28.174] [148419] (captured_audio_processor.cpp:104): Audio frame: 10998, samples: 80, channels: 1, rate: 8000 [Hz], bytes: 2, level: 0
+[2024-12-15 16:32:28.571] [148411] (rtcp_sender.cc:472): Sender Report {ssrc: 5150, ntp: 3943258348:2454453550, rtp_timestamp: 123194395, last_rtp_timestamp: 19200, last_frame_capture_time_ms: 2846518, now_us: 2846525001, rtp_rate: 8}
+[2024-12-15 16:32:36.077] [148416] (audio_device_buffer.cc:447): [REC : 6237msec, 48kHz] callbacks: 624, samples: 299520, rate: 48023, rate diff: 0%, level: 0
+[2024-12-15 16:32:38.195] [148419] (captured_audio_processor.cpp:93): Audio frames processed: 12000, noise canceller process time: 2983 [ms]
+[2024-12-15 16:32:38.195] [148419] (captured_audio_processor.cpp:104): Audio frame: 12000, samples: 80, channels: 1, rate: 8000 [Hz], bytes: 2, level: 0
+[2024-12-15 16:32:46.083] [148416] (audio_device_buffer.cc:447): [REC : 6243msec, 48kHz] callbacks: 624, samples: 299520, rate: 47977, rate diff: 0%, level: 0
+[2024-12-15 16:32:48.211] [148419] (captured_audio_processor.cpp:93): Audio frames processed: 13002, noise canceller process time: 3226 [ms]
+[2024-12-15 16:32:48.211] [148419] (captured_audio_processor.cpp:104): Audio frame: 13002, samples: 80, channels: 1, rate: 8000 [Hz], bytes: 2, level: 0
+[2024-12-15 16:32:56.089] [148416] (audio_device_buffer.cc:447): [REC : 6248msec, 48kHz] callbacks: 624, samples: 299520, rate: 47939, rate diff: 0%, level: 0
+[2024-12-15 16:32:56.132] [148419] (agc_manager_direct.cc:134): Input clipping rate: 0%
+[2024-12-15 16:32:58.233] [148419] (captured_audio_processor.cpp:93): Audio frames processed: 14004, noise canceller process time: 3471 [ms]
+[2024-12-15 16:32:58.233] [148419] (captured_audio_processor.cpp:104): Audio frame: 14004, samples: 80, channels: 1, rate: 8000 [Hz], bytes: 2, level: 0
+[2024-12-15 16:33:01.063] [148411] (rtcp_sender.cc:472): Sender Report {ssrc: 5150, ntp: 3943258381:273434797, rtp_timestamp: 123454403, last_rtp_timestamp: 279200, last_frame_capture_time_ms: 2879009, now_us: 2879017193, rtp_rate: 8}
+[2024-12-15 16:33:06.096] [148416] (audio_device_buffer.cc:447): [REC : 6254msec, 48kHz] callbacks: 627, samples: 300960, rate: 48123, rate diff: 0%, level: 0
+[2024-12-15 16:33:08.254] [148419] (captured_audio_processor.cpp:93): Audio frames processed: 15006, noise canceller process time: 3712 [ms]
+[2024-12-15 16:33:08.254] [148419] (captured_audio_processor.cpp:104): Audio frame: 15006, samples: 80, channels: 1, rate: 8000 [Hz], bytes: 2, level: 0
+[2024-12-15 16:33:16.099] [148416] (audio_device_buffer.cc:447): [REC : 6257msec, 48kHz] callbacks: 627, samples: 300960, rate: 48100, rate diff: 0%, level: 0
+[2024-12-15 16:33:18.310] [148419] (captured_audio_processor.cpp:93): Audio frames processed: 16002, noise canceller process time: 3955 [ms]
+[2024-12-15 16:33:18.311] [148419] (captured_audio_processor.cpp:104): Audio frame: 16002, samples: 80, channels: 1, rate: 8000 [Hz], bytes: 2, level: 0
+[2024-12-15 16:33:19.071] [148411] (audio_engine.cpp:182): Setting audio input device: 'default'
+[2024-12-15 16:33:19.071] [148411] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-12-15 16:33:19.071] [148411] (audio_device_impl.cc:877): StopRecording
+[2024-12-15 16:33:19.071] [148411] (audio_device_buffer.cc:175): HISTOGRAM(WebRTC.Audio.RecordedOnlyZeros): 0
+[2024-12-15 16:33:19.071] [148411] (audio_device_buffer.cc:178): total recording time: 53000
+[2024-12-15 16:33:19.071] [148411] (audio_device_impl.cc:881): output: 0
+[2024-12-15 16:33:19.071] [148411] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-12-15 16:33:19.071] [148411] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-12-15 16:33:19.071] [148411] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2024-12-15 16:33:19.072] [148411] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2024-12-15 16:33:19.073] [148411] (audio_device_impl.cc:573): output: 1
+[2024-12-15 16:33:19.073] [148411] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-12-15 16:33:19.073] [148411] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-12-15 16:33:19.073] [148411] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-12-15 16:33:19.073] [148411] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-12-15 16:33:19.073] [148411] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-12-15 16:33:19.073] [148411] (audio_device_impl.cc:877): StopRecording
+[2024-12-15 16:33:19.073] [148411] (audio_device_impl.cc:881): output: 0
+[2024-12-15 16:33:19.073] [148411] (call.cc:1220): UpdateAggregateNetworkState: aggregate_state change to down
+[2024-12-15 16:33:19.073] [148411] (pacing_controller.cc:110): PacedSender paused.
+[2024-12-15 16:33:19.073] [148411] (control_handler.cc:80): Bitrate estimate state changed, BWE: 300 kbps.
+[2024-12-15 16:33:19.073] [148411] (audio_send_stream.cc:179): ~AudioSendStream: 5150
+[2024-12-15 16:33:19.074] [148411] (audio_coding_module.cc:192): Created
+[2024-12-15 16:33:19.074] [148411] (audio_send_stream.cc:164): AudioSendStream: 5150
+[2024-12-15 16:33:19.074] [148411] (audio_send_stream.cc:227): AudioSendStream::ConfigureStream: {rtp: {ssrc: 5150, extmap-allow-mixed: false, extensions: [], c_name: }, rtcp_report_interval_ms: 5000, send_transport: (Transport), min_bitrate_bps: -1, max_bitrate_bps: -1, has audio_network_adaptor_config: false, has_dscp: false, send_codec_spec: {nack_enabled: false, transport_cc_enabled: false, enable_non_sender_rtt: false, cng_payload_type: <unset>, red_payload_type: <unset>, payload_type: 0, format: {name: pcmu, clockrate_hz: 8000, num_channels: 1, parameters: {}}}}
+[2024-12-15 16:33:19.074] [148411] (audio_send_stream.cc:861): Config is invalid: min_bitrate_bps=-1; max_bitrate_bps=-1; both expected greater or equal to 0
+[2024-12-15 16:33:19.074] [148411] (audio_send_stream.cc:861): Config is invalid: min_bitrate_bps=-1; max_bitrate_bps=-1; both expected greater or equal to 0
+[2024-12-15 16:33:19.074] [148411] (call.cc:1220): UpdateAggregateNetworkState: aggregate_state change to up
+[2024-12-15 16:33:19.074] [148411] (pacing_controller.cc:117): PacedSender resumed.
+[2024-12-15 16:33:19.074] [148411] (control_handler.cc:80): Bitrate estimate state changed, BWE: 300 kbps.
+[2024-12-15 16:33:19.074] [148411] (audio_device_impl.cc:888): Recording
+[2024-12-15 16:33:19.074] [148411] (audio_device_impl.cc:807): InitRecording
+[2024-12-15 16:33:19.074] [148411] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-12-15 16:33:19.074] [148411] (audio_device_buffer.cc:182): SetRecordingSampleRate(48000)
+[2024-12-15 16:33:19.074] [148411] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-12-15 16:33:19.074] [148411] (audio_device_impl.cc:813): output: 0
+[2024-12-15 16:33:19.074] [148411] (audio_device_impl.cc:863): StartRecording
+[2024-12-15 16:33:19.074] [148411] (audio_device_impl.cc:888): Recording
+[2024-12-15 16:33:19.108] [148411] (audio_device_impl.cc:870): output: 0
+[2024-12-15 16:33:19.108] [148411] (audio_engine.cpp:199): Setting audio output device: 'default'
+[2024-12-15 16:33:19.108] [148411] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-12-15 16:33:19.108] [148411] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-12-15 16:33:19.108] [148411] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-12-15 16:33:19.108] [148411] (audio_device_impl.cc:619): output: 1
+[2024-12-15 16:33:19.108] [148411] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-12-15 16:33:19.108] [148411] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-12-15 16:33:19.108] [148411] (engine.cpp:225): *** OnDevicesChanged:
+[2024-12-15 16:33:19.108] [148411] (engine.cpp:226): * audioInput:
+[2024-12-15 16:33:19.108] [148411] (engine.cpp:229): - default: Family 17h/19h/1ah HD Audio Controller Analog Stereo ()
+[2024-12-15 16:33:19.108] [148411] (engine.cpp:229): - Family 17h/19h/1ah HD Audio Controller Analog Stereo ()
+[2024-12-15 16:33:19.108] [148411] (engine.cpp:231): * audioOutput:
+[2024-12-15 16:33:19.108] [148411] (engine.cpp:234): - default: Dummy Output ()
+[2024-12-15 16:33:19.108] [148411] (engine.cpp:234): - Dummy Output ()
+[2024-12-15 16:33:19.137] [148419] (audio_device_buffer.cc:247): Size of recording buffer: 960
+[2024-12-15 16:33:19.139] [148762] (rtp_sender_audio.cc:306): First audio RTP packet sent to pacer
+[2024-12-15 16:33:19.142] [148411] (audio_engine.cpp:182): Setting audio input device: 'default'
+[2024-12-15 16:33:19.142] [148411] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-12-15 16:33:19.142] [148411] (audio_device_impl.cc:877): StopRecording
+[2024-12-15 16:33:19.142] [148411] (audio_device_buffer.cc:178): total recording time: 67
+[2024-12-15 16:33:19.142] [148411] (audio_device_impl.cc:881): output: 0
+[2024-12-15 16:33:19.142] [148411] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-12-15 16:33:19.142] [148411] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-12-15 16:33:19.142] [148411] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2024-12-15 16:33:19.143] [148411] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2024-12-15 16:33:19.143] [148411] (audio_device_impl.cc:573): output: 1
+[2024-12-15 16:33:19.143] [148411] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-12-15 16:33:19.143] [148411] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-12-15 16:33:19.143] [148411] (audio_device_impl.cc:547): SetMicrophoneVolume(65536)
+[2024-12-15 16:33:19.143] [148411] (audio_device_impl.cc:877): StopRecording
+[2024-12-15 16:33:19.143] [148411] (audio_device_impl.cc:881): output: 0
+[2024-12-15 16:33:19.143] [148411] (call.cc:1220): UpdateAggregateNetworkState: aggregate_state change to down
+[2024-12-15 16:33:19.143] [148411] (pacing_controller.cc:110): PacedSender paused.
+[2024-12-15 16:33:19.143] [148411] (control_handler.cc:80): Bitrate estimate state changed, BWE: 300 kbps.
+[2024-12-15 16:33:19.143] [148411] (audio_send_stream.cc:179): ~AudioSendStream: 5150
+[2024-12-15 16:33:19.143] [148411] (audio_coding_module.cc:192): Created
+[2024-12-15 16:33:19.143] [148411] (audio_send_stream.cc:164): AudioSendStream: 5150
+[2024-12-15 16:33:19.143] [148411] (audio_send_stream.cc:227): AudioSendStream::ConfigureStream: {rtp: {ssrc: 5150, extmap-allow-mixed: false, extensions: [], c_name: }, rtcp_report_interval_ms: 5000, send_transport: (Transport), min_bitrate_bps: -1, max_bitrate_bps: -1, has audio_network_adaptor_config: false, has_dscp: false, send_codec_spec: {nack_enabled: false, transport_cc_enabled: false, enable_non_sender_rtt: false, cng_payload_type: <unset>, red_payload_type: <unset>, payload_type: 0, format: {name: pcmu, clockrate_hz: 8000, num_channels: 1, parameters: {}}}}
+[2024-12-15 16:33:19.144] [148411] (audio_send_stream.cc:861): Config is invalid: min_bitrate_bps=-1; max_bitrate_bps=-1; both expected greater or equal to 0
+[2024-12-15 16:33:19.144] [148411] (audio_send_stream.cc:861): Config is invalid: min_bitrate_bps=-1; max_bitrate_bps=-1; both expected greater or equal to 0
+[2024-12-15 16:33:19.144] [148411] (call.cc:1220): UpdateAggregateNetworkState: aggregate_state change to up
+[2024-12-15 16:33:19.144] [148411] (pacing_controller.cc:117): PacedSender resumed.
+[2024-12-15 16:33:19.144] [148411] (control_handler.cc:80): Bitrate estimate state changed, BWE: 300 kbps.
+[2024-12-15 16:33:19.144] [148411] (audio_device_impl.cc:888): Recording
+[2024-12-15 16:33:19.144] [148411] (audio_device_impl.cc:807): InitRecording
+[2024-12-15 16:33:19.144] [148411] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-12-15 16:33:19.145] [148411] (audio_device_buffer.cc:182): SetRecordingSampleRate(48000)
+[2024-12-15 16:33:19.145] [148411] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-12-15 16:33:19.145] [148411] (audio_device_impl.cc:813): output: 0
+[2024-12-15 16:33:19.145] [148411] (audio_device_impl.cc:863): StartRecording
+[2024-12-15 16:33:19.145] [148411] (audio_device_impl.cc:888): Recording
+[2024-12-15 16:33:19.199] [148411] (audio_device_impl.cc:870): output: 0
+[2024-12-15 16:33:19.199] [148411] (audio_engine.cpp:199): Setting audio output device: 'default'
+[2024-12-15 16:33:19.199] [148411] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-12-15 16:33:19.199] [148411] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-12-15 16:33:19.200] [148411] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-12-15 16:33:19.200] [148411] (audio_device_impl.cc:619): output: 1
+[2024-12-15 16:33:19.200] [148411] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-12-15 16:33:19.200] [148411] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-12-15 16:33:19.228] [148763] (rtp_sender_audio.cc:306): First audio RTP packet sent to pacer
+[2024-12-15 16:33:24.071] [148411] (audio_engine.cpp:182): Setting audio input device: 'default'
+[2024-12-15 16:33:24.071] [148411] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-12-15 16:33:24.071] [148411] (audio_device_impl.cc:877): StopRecording
+[2024-12-15 16:33:24.071] [148411] (audio_device_buffer.cc:178): total recording time: 4927
+[2024-12-15 16:33:24.071] [148411] (audio_device_impl.cc:881): output: 0
+[2024-12-15 16:33:24.071] [148411] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-12-15 16:33:24.071] [148411] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-12-15 16:33:24.071] [148411] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2024-12-15 16:33:24.072] [148411] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2024-12-15 16:33:24.072] [148411] (audio_device_impl.cc:573): output: 1
+[2024-12-15 16:33:24.072] [148411] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-12-15 16:33:24.072] [148411] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-12-15 16:33:24.072] [148411] (audio_device_impl.cc:547): SetMicrophoneVolume(65536)
+[2024-12-15 16:33:24.072] [148411] (audio_device_impl.cc:877): StopRecording
+[2024-12-15 16:33:24.072] [148411] (audio_device_impl.cc:881): output: 0
+[2024-12-15 16:33:24.072] [148418] (audio_mixer_manager_pulse_linux.cc:726): failed to set volume
+[2024-12-15 16:33:24.072] [148411] (call.cc:1220): UpdateAggregateNetworkState: aggregate_state change to down
+[2024-12-15 16:33:24.072] [148411] (pacing_controller.cc:110): PacedSender paused.
+[2024-12-15 16:33:24.072] [148411] (control_handler.cc:80): Bitrate estimate state changed, BWE: 300 kbps.
+[2024-12-15 16:33:24.072] [148411] (audio_send_stream.cc:179): ~AudioSendStream: 5150
+[2024-12-15 16:33:24.073] [148411] (audio_coding_module.cc:192): Created
+[2024-12-15 16:33:24.073] [148411] (audio_send_stream.cc:164): AudioSendStream: 5150
+[2024-12-15 16:33:24.073] [148411] (audio_send_stream.cc:227): AudioSendStream::ConfigureStream: {rtp: {ssrc: 5150, extmap-allow-mixed: false, extensions: [], c_name: }, rtcp_report_interval_ms: 5000, send_transport: (Transport), min_bitrate_bps: -1, max_bitrate_bps: -1, has audio_network_adaptor_config: false, has_dscp: false, send_codec_spec: {nack_enabled: false, transport_cc_enabled: false, enable_non_sender_rtt: false, cng_payload_type: <unset>, red_payload_type: <unset>, payload_type: 0, format: {name: pcmu, clockrate_hz: 8000, num_channels: 1, parameters: {}}}}
+[2024-12-15 16:33:24.073] [148411] (audio_send_stream.cc:861): Config is invalid: min_bitrate_bps=-1; max_bitrate_bps=-1; both expected greater or equal to 0
+[2024-12-15 16:33:24.073] [148411] (audio_send_stream.cc:861): Config is invalid: min_bitrate_bps=-1; max_bitrate_bps=-1; both expected greater or equal to 0
+[2024-12-15 16:33:24.073] [148411] (call.cc:1220): UpdateAggregateNetworkState: aggregate_state change to up
+[2024-12-15 16:33:24.073] [148411] (pacing_controller.cc:117): PacedSender resumed.
+[2024-12-15 16:33:24.073] [148411] (control_handler.cc:80): Bitrate estimate state changed, BWE: 300 kbps.
+[2024-12-15 16:33:24.073] [148411] (audio_device_impl.cc:888): Recording
+[2024-12-15 16:33:24.073] [148411] (audio_device_impl.cc:807): InitRecording
+[2024-12-15 16:33:24.073] [148411] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-12-15 16:33:24.073] [148411] (audio_device_buffer.cc:182): SetRecordingSampleRate(48000)
+[2024-12-15 16:33:24.073] [148411] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-12-15 16:33:24.073] [148411] (audio_device_impl.cc:813): output: 0
+[2024-12-15 16:33:24.073] [148411] (audio_device_impl.cc:863): StartRecording
+[2024-12-15 16:33:24.073] [148411] (audio_device_impl.cc:888): Recording
+[2024-12-15 16:33:24.101] [148411] (audio_device_impl.cc:870): output: 0
+[2024-12-15 16:33:24.101] [148411] (audio_engine.cpp:199): Setting audio output device: 'default'
+[2024-12-15 16:33:24.101] [148411] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-12-15 16:33:24.101] [148411] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-12-15 16:33:24.102] [148411] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-12-15 16:33:24.102] [148411] (audio_device_impl.cc:619): output: 1
+[2024-12-15 16:33:24.102] [148411] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-12-15 16:33:24.102] [148411] (audio_device_buffer.cc:208): SetPlayoutChannels(2)
+[2024-12-15 16:33:24.102] [148411] (engine.cpp:225): *** OnDevicesChanged:
+[2024-12-15 16:33:24.102] [148411] (engine.cpp:226): * audioInput:
+[2024-12-15 16:33:24.102] [148411] (engine.cpp:229): - default: alsa_output.pci-0000_0b_00.6.analog-stereo.monitor ()
+[2024-12-15 16:33:24.102] [148411] (engine.cpp:231): * audioOutput:
+[2024-12-15 16:33:24.102] [148411] (engine.cpp:234): - default: Family 17h/19h/1ah HD Audio Controller Analog Stereo ()
+[2024-12-15 16:33:24.102] [148411] (engine.cpp:234): - Family 17h/19h/1ah HD Audio Controller Analog Stereo ()
+[2024-12-15 16:33:24.102] [148411] (audio_engine.cpp:182): Setting audio input device: 'default'
+[2024-12-15 16:33:24.102] [148411] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-12-15 16:33:24.102] [148411] (audio_device_impl.cc:877): StopRecording
+[2024-12-15 16:33:24.102] [148411] (audio_device_buffer.cc:178): total recording time: 29
+[2024-12-15 16:33:24.102] [148411] (audio_device_impl.cc:881): output: 0
+[2024-12-15 16:33:24.102] [148411] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-12-15 16:33:24.102] [148411] (audio_device_buffer.cc:202): SetRecordingChannels(2)
+[2024-12-15 16:33:24.102] [148411] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2024-12-15 16:33:24.103] [148411] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2024-12-15 16:33:24.104] [148411] (audio_mixer_manager_pulse_linux.cc:429): input device index has not been set
+[2024-12-15 16:33:24.104] [148411] (audio_device_impl.cc:578): SetStereoRecording(0)
+[2024-12-15 16:33:24.104] [148411] (audio_device_buffer.cc:202): SetRecordingChannels(1)
+[2024-12-15 16:33:24.104] [148411] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-12-15 16:33:24.104] [148411] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-12-15 16:33:24.104] [148411] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-12-15 16:33:24.104] [148411] (audio_device_impl.cc:877): StopRecording
+[2024-12-15 16:33:24.104] [148411] (audio_device_impl.cc:881): output: 0
+[2024-12-15 16:33:24.104] [148411] (call.cc:1220): UpdateAggregateNetworkState: aggregate_state change to down
+[2024-12-15 16:33:24.104] [148411] (pacing_controller.cc:110): PacedSender paused.
+[2024-12-15 16:33:24.104] [148411] (control_handler.cc:80): Bitrate estimate state changed, BWE: 300 kbps.
+[2024-12-15 16:33:24.104] [148411] (audio_send_stream.cc:179): ~AudioSendStream: 5150
+[2024-12-15 16:33:24.104] [148411] (audio_coding_module.cc:192): Created
+[2024-12-15 16:33:24.104] [148411] (audio_send_stream.cc:164): AudioSendStream: 5150
+[2024-12-15 16:33:24.104] [148411] (audio_send_stream.cc:227): AudioSendStream::ConfigureStream: {rtp: {ssrc: 5150, extmap-allow-mixed: false, extensions: [], c_name: }, rtcp_report_interval_ms: 5000, send_transport: (Transport), min_bitrate_bps: -1, max_bitrate_bps: -1, has audio_network_adaptor_config: false, has_dscp: false, send_codec_spec: {nack_enabled: false, transport_cc_enabled: false, enable_non_sender_rtt: false, cng_payload_type: <unset>, red_payload_type: <unset>, payload_type: 0, format: {name: pcmu, clockrate_hz: 8000, num_channels: 1, parameters: {}}}}
+[2024-12-15 16:33:24.104] [148411] (audio_send_stream.cc:861): Config is invalid: min_bitrate_bps=-1; max_bitrate_bps=-1; both expected greater or equal to 0
+[2024-12-15 16:33:24.104] [148411] (audio_send_stream.cc:861): Config is invalid: min_bitrate_bps=-1; max_bitrate_bps=-1; both expected greater or equal to 0
+[2024-12-15 16:33:24.104] [148411] (call.cc:1220): UpdateAggregateNetworkState: aggregate_state change to up
+[2024-12-15 16:33:24.104] [148411] (pacing_controller.cc:117): PacedSender resumed.
+[2024-12-15 16:33:24.104] [148411] (control_handler.cc:80): Bitrate estimate state changed, BWE: 300 kbps.
+[2024-12-15 16:33:24.104] [148411] (audio_device_impl.cc:888): Recording
+[2024-12-15 16:33:24.104] [148411] (audio_device_impl.cc:807): InitRecording
+[2024-12-15 16:33:24.104] [148411] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-12-15 16:33:24.105] [148411] (audio_device_buffer.cc:182): SetRecordingSampleRate(48000)
+[2024-12-15 16:33:24.105] [148411] (audio_device_buffer.cc:202): SetRecordingChannels(1)
+[2024-12-15 16:33:24.105] [148411] (audio_device_impl.cc:813): output: 0
+[2024-12-15 16:33:24.105] [148411] (audio_device_impl.cc:863): StartRecording
+[2024-12-15 16:33:24.105] [148411] (audio_device_impl.cc:888): Recording

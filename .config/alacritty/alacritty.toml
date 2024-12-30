@@ -1,0 +1,9 @@
+[env]
+TERM = "xterm-256color"
+[font.normal]
+family = "CaskaydiaCove Nerd Font Mono"
+#CaskaydiaCove Nerd Font Mono
+[font]
+size = 16
+[window]
+opacity = 0.9
