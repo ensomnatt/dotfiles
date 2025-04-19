@@ -1,0 +1,74 @@
+[LOG] Welcome to hyprpaper!
+built from commit  ()
+[LOG] Cleaned old hyprpaper preloads (3), removing 337.1MB
+[LOG] Preloaded target /home/ensomnatt/pictures/wallpapers/griffith.jpg in 22.83ms -> Pixel size: [1920, 1080]
+[LOG] Buffer created for target /home/ensomnatt/pictures/wallpapers/griffith.jpg, Shared Memory usage: 298.6MB
+[LOG] Total SM usage for all buffers: 298.6MB
+[LOG] hyprpaper socket started at /run/user/1000/hypr/882f7ad7d2bbfc7440d0ccaef93b1cdd78e8e3ff_1740317547_1764763331/.hyprpaper.sock (fd: 6)
+[LOG] configure for HDMI-A-1
+[LOG] configure for HDMI-A-1
+[LOG] Buffer created for target /home/ensomnatt/pictures/wallpapers/griffith.jpg, Shared Memory usage: 5.3MB
+[LOG] Total SM usage for all buffers: 303.9MB
+[LOG] Image data for HDMI-A-1: /home/ensomnatt/pictures/wallpapers/griffith.jpg at [-0.00, 0.00], scale: 0.80 (original image size: [1920, 1080])
+[LOG] Submitting viewport dest size 1536x864 for 5a1b82c469c0
+[LOG] handlePreferredScale: 2.50 for 5a1b82c469c0
+[LOG] Buffer created for target /home/ensomnatt/pictures/wallpapers/griffith.jpg, Shared Memory usage: 33.2MB
+[LOG] Total SM usage for all buffers: 337.1MB
+[LOG] Image data for HDMI-A-1: /home/ensomnatt/pictures/wallpapers/griffith.jpg at [-0.00, 0.00], scale: 2.00 (original image size: [1920, 1080])
+[LOG] Submitting viewport dest size 1536x864 for 5a1b82c469c0
+[LOG] Welcome to hyprpaper!
+built from commit  ()
+[LOG] Cleaned old hyprpaper preloads (3), removing 337.1MB
+[LOG] Preloaded target /home/ensomnatt/pictures/wallpapers/griffith.jpg in 22.52ms -> Pixel size: [1920, 1080]
+[LOG] Buffer created for target /home/ensomnatt/pictures/wallpapers/griffith.jpg, Shared Memory usage: 298.6MB
+[LOG] Total SM usage for all buffers: 298.6MB
+[LOG] hyprpaper socket started at /run/user/1000/hypr/882f7ad7d2bbfc7440d0ccaef93b1cdd78e8e3ff_1740317547_1764763331/.hyprpaper.sock (fd: 6)
+[LOG] configure for HDMI-A-1
+[LOG] configure for HDMI-A-1
+[LOG] Buffer created for target /home/ensomnatt/pictures/wallpapers/griffith.jpg, Shared Memory usage: 5.3MB
+[LOG] Total SM usage for all buffers: 303.9MB
+[LOG] Image data for HDMI-A-1: /home/ensomnatt/pictures/wallpapers/griffith.jpg at [-0.00, 0.00], scale: 0.80 (original image size: [1920, 1080])
+[LOG] Submitting viewport dest size 1536x864 for 58d5fede69c0
+[LOG] handlePreferredScale: 2.50 for 58d5fede69c0
+[LOG] Buffer created for target /home/ensomnatt/pictures/wallpapers/griffith.jpg, Shared Memory usage: 33.2MB
+[LOG] Total SM usage for all buffers: 337.1MB
+[LOG] Image data for HDMI-A-1: /home/ensomnatt/pictures/wallpapers/griffith.jpg at [-0.00, 0.00], scale: 2.00 (original image size: [1920, 1080])
+[LOG] Submitting viewport dest size 1536x864 for 58d5fede69c0
+[LOG] Buffer created for target /home/ensomnatt/pictures/wallpapers/griffith.jpg, Shared Memory usage: 207.4MB
+[LOG] Total SM usage for all buffers: 544.4MB
+[LOG] Welcome to hyprpaper!
+built from commit  ()
+[LOG] Cleaned old hyprpaper preloads (3), removing 337.1MB
+[LOG] Preloaded target /home/ensomnatt/pictures/wallpapers/griffith.jpg in 22.17ms -> Pixel size: [1920, 1080]
+[LOG] Buffer created for target /home/ensomnatt/pictures/wallpapers/griffith.jpg, Shared Memory usage: 298.6MB
+[LOG] Total SM usage for all buffers: 298.6MB
+[LOG] hyprpaper socket started at /run/user/1000/hypr/882f7ad7d2bbfc7440d0ccaef93b1cdd78e8e3ff_1740396356_2113979444/.hyprpaper.sock (fd: 6)
+[LOG] configure for HDMI-A-1
+[LOG] configure for HDMI-A-1
+[LOG] Buffer created for target /home/ensomnatt/pictures/wallpapers/griffith.jpg, Shared Memory usage: 5.3MB
+[LOG] Total SM usage for all buffers: 303.9MB
+[LOG] Image data for HDMI-A-1: /home/ensomnatt/pictures/wallpapers/griffith.jpg at [-0.00, 0.00], scale: 0.80 (original image size: [1920, 1080])
+[LOG] Submitting viewport dest size 1536x864 for 5e7a95aaea00
+[LOG] handlePreferredScale: 2.50 for 5e7a95aaea00
+[LOG] Buffer created for target /home/ensomnatt/pictures/wallpapers/griffith.jpg, Shared Memory usage: 33.2MB
+[LOG] Total SM usage for all buffers: 337.1MB
+[LOG] Image data for HDMI-A-1: /home/ensomnatt/pictures/wallpapers/griffith.jpg at [-0.00, 0.00], scale: 2.00 (original image size: [1920, 1080])
+[LOG] Submitting viewport dest size 1536x864 for 5e7a95aaea00
+[LOG] Welcome to hyprpaper!
+built from commit  ()
+[LOG] Cleaned old hyprpaper preloads (4), removing 381.5MB
+[LOG] Preloaded target /home/ensomnatt/pictures/wallpapers/griffith.jpg in 22.34ms -> Pixel size: [1920, 1080]
+[LOG] Buffer created for target /home/ensomnatt/pictures/wallpapers/griffith.jpg, Shared Memory usage: 132.7MB
+[LOG] Total SM usage for all buffers: 132.7MB
+[LOG] hyprpaper socket started at /run/user/1000/hypr/882f7ad7d2bbfc7440d0ccaef93b1cdd78e8e3ff_1740823377_1248856836/.hyprpaper.sock (fd: 6)
+[LOG] configure for HDMI-A-1
+[LOG] configure for HDMI-A-1
+[LOG] Buffer created for target /home/ensomnatt/pictures/wallpapers/griffith.jpg, Shared Memory usage: 8.3MB
+[LOG] Total SM usage for all buffers: 141.0MB
+[LOG] Image data for HDMI-A-1: /home/ensomnatt/pictures/wallpapers/griffith.jpg at [-0.00, 0.00], scale: 1.00 (original image size: [1920, 1080])
+[LOG] Submitting viewport dest size 1920x1080 for 5ab18f7739d0
+[LOG] handlePreferredScale: 2.00 for 5ab18f7739d0
+[LOG] Buffer created for target /home/ensomnatt/pictures/wallpapers/griffith.jpg, Shared Memory usage: 33.2MB
+[LOG] Total SM usage for all buffers: 174.2MB
+[LOG] Image data for HDMI-A-1: /home/ensomnatt/pictures/wallpapers/griffith.jpg at [-0.00, 0.00], scale: 2.00 (original image size: [1920, 1080])
+[LOG] Submitting viewport dest size 1920x1080 for 5ab18f7739d0

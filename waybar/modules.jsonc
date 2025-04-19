@@ -1,0 +1,65 @@
+{
+  "hyprland/window": {
+    "format": "󰣆 {title}",
+    "max-length": 30,
+    "separate-outputs": false,
+    "rewrite": {
+      "^.*( — Firefox| - Mozilla Firefox|Firefox)$": " Firefox",
+      "^.*~$": " WezTerm",
+      "(.*) ": " Empty"
+    },
+  },
+
+  "custom/arch": {
+    "format": "󰣇"
+  },
+
+  "clock": {
+    "interval": 1,
+    "format": "󰸗 {:%b %d  %H:%M:%S}",
+    "max-length": 25
+  },
+
+  "cpu": {
+    "format": "󰘚 {usage}󱉸",
+  },
+
+  "memory": {
+    "format": " {:2}󱉸",
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": " Muted",
+    "format-icons": {
+      "default": [
+        "", // 0%
+        "", // 1-49%
+        ""  // 50-100%
+      ]
+    },
+    "scroll-step": 5,
+    "max-volume": 150
+  },
+
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "all-outputs": true,
+    "format-icons": {
+      "active": "󰮯",
+      "default": ""
+    }
+  },
+
+  "hyprland/language": {
+    "format": "{}",
+    "format-en": "🇺🇸 🦅",
+    "format-ru": "🇷🇺 🐻"
+  },
+
+  "mpris": {
+    "format": "{artist} - {title}",
+    "max-length": 50
+  }
+}
