@@ -1,0 +1,40 @@
+@import "../../.cache/wal/colors-waybar.css";
+
+* { 
+  border: none;
+  border-radius: 0;
+  font: 18px "JetBrainsMono Nerd Font Propo";
+  font-weight: bolder;
+  box-shadow: none; 
+  text-shadow: none;
+}
+
+@define-color main-color lighter(@color11);
+
+window#waybar {
+  background-color: alpha(@background, 0.8);
+  border-radius: 8px;
+}
+
+.modules-left, .modules-right, .modules-center {
+  margin: 7px;
+  color: @main-color;
+}
+
+#custom-arch, #workspaces, #window, #mpris, #cpu, #memory, #clock, #language, #pulseaudio, #custom-volumeicon {
+  padding: 0px 13px;
+  background: @background;
+  border-radius: 30px;
+}
+
+#custom-arch, #workspaces, #window, #language {
+  margin-left: 10px;
+}
+
+#language, #cpu, #memory, #clock, #pulseaudio, #custom-volumeicon {
+  margin-right: 10px;
+}
+
+#workspaces button {
+  color: @main-color;
+}

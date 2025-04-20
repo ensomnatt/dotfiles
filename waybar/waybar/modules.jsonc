@@ -1,0 +1,94 @@
+{
+  "hyprland/window": {
+    "format": "󰣆 {title}",
+    "max-length": 30,
+    "separate-outputs": false,
+    "rewrite": {
+      "^.*( — Firefox| - Mozilla Firefox|Firefox)$": " Firefox",
+      "^.*~$": " WezTerm",
+      "(.*) ": " Empty"
+    },
+  },
+
+  "custom/arch": {
+    "format": "󰣇"
+  },
+
+  "clock": {
+    "interval": 1,
+    "format": "󰸗 {:%b %d  %H:%M:%S}",
+    "max-length": 25
+  },
+
+  "cpu": {
+    "format": "󰘚 {usage}󱉸",
+  },
+
+  "memory": {
+    "format": " {:2}󱉸",
+  },
+
+  "pulseaudio#input": {
+    "format": " {format_source}%",
+    "format-source": "{volume}",
+    "format-source-muted": "{volume}",
+    "on-scroll-up": "sh -c 'vol=$(pactl get-source-volume @DEFAULT_SOURCE@ | grep -oP \"\\d+(?=%)\" | head -1); if [ \"$vol\" -lt 100 ]; then pactl set-source-volume @DEFAULT_SOURCE@ +5%; fi'",
+    "on-scroll-down": "pactl set-source-volume @DEFAULT_SOURCE@ -5%",
+    "max-volume": "100",
+    "on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+    "tooltip-format": "{source_desc}"
+  },
+
+  "pulseaudio#output": {
+    "format": "{icon} {volume}%",
+    "format-muted": " Muted",
+    "format-icons": {
+      "default": [
+        "", // 0%
+        "", // 1-49%
+        ""  // 50-100%
+      ]
+    },
+    "scroll-step": 5,
+    "max-volume": 150
+  },
+
+  "custom/volumeicon": {
+    "format": "",
+  },
+
+  "group/audio": {
+    "drawer": {
+      "transition-duration": 500,
+      "children-class": "not-power",
+      "transition-left-to-right": false,
+    },
+    "orientation": "horizontal",
+    "modules": [
+      "custom/volumeicon",
+      "pulseaudio#input",
+      "pulseaudio#output",
+    ],
+  },
+
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "all-outputs": true,
+    "format-icons": {
+      "active": "󰮯",
+      "default": ""
+    }
+  },
+
+  "hyprland/language": {
+    "format": "{}",
+    "format-en": "🇺🇸 🦅",
+    "format-ru": "🇷🇺 🐻"
+  },
+
+  "mpris": {
+    "format": "{artist} - {title}",
+    "max-length": 40
+  }
+}
