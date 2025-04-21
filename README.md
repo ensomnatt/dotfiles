@@ -1,17 +1,17 @@
 # Ensomnatt's hyprland dotfiles
 
-OS: Arch Linux
-WM: Hyprland
-Bar: Waybar
-Terminal: WezTerm
-Code editor: Neovim
-App launcher: rofi 
-Browser: Zen Browser
-Video player: mpv 
-Notifications daemon: dunst 
-Colors: pywal16
-Logout app: Wlogout
-File manager: yazi
+OS: Arch Linux  
+WM: Hyprland  
+Bar: Waybar  
+Terminal: WezTerm  
+Code editor: Neovim  
+App launcher: rofi   
+Browser: Zen Browser  
+Video player: mpv   
+Notifications daemon: dunst   
+Colors: pywal16  
+Logout app: Wlogout  
+File manager: yazi  
 
 ![fastfetch](pictures/fastfetch.png)
 ![neovim](pictures/neovim.png)
