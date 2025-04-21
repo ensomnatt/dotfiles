@@ -21,7 +21,7 @@ window#waybar {
   color: @main-color;
 }
 
-#custom-arch, #workspaces, #window, #mpris, #cpu, #memory, #clock, #language, #pulseaudio {
+#custom-arch, #workspaces, #window, #mpris, #cpu, #memory, #clock, #language, #pulseaudio, #custom-volumeicon {
   padding: 0px 13px;
   background: @background;
   border-radius: 30px;
@@ -31,7 +31,7 @@ window#waybar {
   margin-left: 10px;
 }
 
-#language, #cpu, #memory, #clock, #pulseaudio {
+#language, #cpu, #memory, #clock, #pulseaudio, #custom-volumeicon {
   margin-right: 10px;
 }
 
