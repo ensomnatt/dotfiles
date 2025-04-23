@@ -11,10 +11,12 @@
 **Colors:** [pywal16](https://github.com/eylles/pywal16)  
 **Logout app:** [Wlogout](https://github.com/ArtsyMacaw/wlogout)  
 **File manager:** [yazi](https://github.com/sxyazi/yazi)  
+**Webfetch:** [Webfetch](https://github.com/ensomnatt/webfetch) 
 
 ![fastfetch](pictures/fastfetch.png)
 ![neovim](pictures/neovim.png)
 ![rofi](pictures/rofi.png)
+![webfetch](pictures/webfetch-demo.png)
 
 ## Installation
 

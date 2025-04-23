@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Webfetch</title>
+    <link href="/static/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="main-container__image">
+        <img src="/static/assets/arch-linux-logo.png" alt="arch linux logo" class="main-container__image__item">
+      </div>
+      
+      <div class="main-container__text">
+        <p class="main-container__text__item">Distro: {{.Platform}}</p>
+        <p class="main-container__text__item">Kernel: {{.Kernel}}</p>
+        <p class="main-container__text__item">Uptime: {{.Uptime}}</p>
+        <p class="main-container__text__item">CPU model: {{.CPUModel}}</p>
+        <p class="main-container__text__item">CPU usage: {{.CPUUsage}}</p>
+        <p class="main-container__text__item">Disk usage: {{.DiskUsage}}</p>
+        <p class="main-container__text__item">RAM usage: {{.RAMUsage}}</p>
+      </div>
+    </div>
+  </body>
+</html>
