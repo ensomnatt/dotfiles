@@ -1,4 +1,4 @@
-@import "../../.cache/wal/colors-waybar.css";
+@import "../../.cache/hellwal/waybar-colors.css";
 
 * { 
   border: none;
@@ -9,7 +9,7 @@
   text-shadow: none;
 }
 
-@define-color main-color lighter(@color11);
+@define-color main-color lighter(@color6);
 
 window#waybar {
   background-color: alpha(@background, 0.8);

@@ -8,7 +8,7 @@
 **App launcher:** [rofi](https://github.com/davatorium/rofi)   
 **Browser:** [Zen Browser](https://zen-browser.app/)  
 **Notifications daemon:** [dunst](https://github.com/dunst-project/dunst)   
-**Colors:** [pywal16](https://github.com/eylles/pywal16)  
+**Colors:** [hellwal](https://github.com/danihek/hellwal)  
 **Logout app:** [Wlogout](https://github.com/ArtsyMacaw/wlogout)  
 **File manager:** [yazi](https://github.com/sxyazi/yazi)  
 **Webfetch:** [Webfetch](https://github.com/ensomnatt/webfetch) 

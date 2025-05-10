@@ -13,9 +13,9 @@ config.window_decorations = "NONE"
 config.window_background_opacity = 0.9
 
 config.window_padding = {
-	left = 22,
-	right = 22,
-	top = 22,
+	left = 30,
+	right = 30,
+	top = 30,
 	bottom = 5,
 }
 
