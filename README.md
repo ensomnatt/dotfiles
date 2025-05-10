@@ -3,7 +3,7 @@
 **OS:** [Arch Linux](https://archlinux.org/)  
 **WM:** [Hyprland](https://hyprland.org/)  
 **Bar:** [Waybar](https://github.com/Alexays/Waybar)  
-**Terminal:** [WezTerm](https://wezterm.org/)  
+**Terminal:** [Wezterm](https://wezterm.org/)  
 **Code editor:** [Neovim](https://neovim.io/)  
 **App launcher:** [rofi](https://github.com/davatorium/rofi)   
 **Browser:** [Zen Browser](https://zen-browser.app/)  
