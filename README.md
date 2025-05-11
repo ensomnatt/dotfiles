@@ -11,7 +11,7 @@
 **Colors:** [Hellwal](https://github.com/danihek/hellwal)  
 **Logout app:** [Wlogout](https://github.com/ArtsyMacaw/wlogout)  
 **File manager:** [yazi](https://github.com/sxyazi/yazi)  
-**Webfetch:** [Webfetch](https://github.com/ensomnatt/webfetch) 
+**Webfetch:** [Webfetch](https://github.com/ensomnatt/webfetch)     
 **Shell:** [zsh](https://www.zsh.org/)
 
 ![fastfetch](pictures/fastfetch.png)
