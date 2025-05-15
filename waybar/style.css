@@ -1,24 +1,31 @@
-@import "../../.cache/hellwal/waybar-colors.css";
+@import "colors.css";
 
 * { 
   border: none;
   border-radius: 0;
-  font: 17px "JetBrainsMono Nerd Font Propo";
-  font-weight: bolder;
+  font: 19px "Mononoki Nerd Font";
+  font-weight: 700;
   box-shadow: none; 
   text-shadow: none;
 }
 
-@define-color main-color lighter(@color6);
+@define-color background @surface;
+@define-color main-color @primary_fixed;
+@define-color second-color @primary;
 
 window#waybar {
   background-color: alpha(@background, 0.8);
   border-radius: 8px;
 }
 
-.modules-left, .modules-right, .modules-center {
+.modules-left, .modules-right {
   margin: 7px;
   color: @main-color;
+}
+
+.modules-center {
+  margin: 7px;
+  color: @second-color;
 }
 
 #custom-arch, #workspaces, #window, #mpris, #cpu, #memory, #clock, #language, #pulseaudio, #custom-volumeicon {

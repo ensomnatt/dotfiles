@@ -22,13 +22,12 @@ source $ZSH/oh-my-zsh.sh
 
 source /home/ensomnatt/other/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-source ~/.cache/hellwal/terminal.sh
-source ~/.cache/hellwal/variables.sh
 source /home/ensomnatt/other/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 alias ls="eza --icons=auto"
 alias fzf="fzf --style full --preview 'bat --style=numbers --color=always {}' --bind 'enter:execute(nvim {})'"
 alias tp="ls ~/.tmux/plugins/"
+alias dps="docker ps --format 'table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Ports}}'"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

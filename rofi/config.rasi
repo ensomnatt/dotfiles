@@ -7,33 +7,34 @@ configuration {
   icon-theme:             "Papirus";
 }
 
-@import "~/.cache/hellwal/rofi.rasi"
+@import "./colors.rasi"
 
 * {
-  bg:                     @background;
-  fg:                     @foreground;
-  rad:                    16px;
-  background-color:       @bg;
-  text-color:             @fg;
+  rad: 16px;
+
+  background-color: transparent;
+  text-color: @fg0;
 }
 
 window {
   width: 35%;
   height: 45%;
   border: 2px solid;
-  border-color: @fg;
+  border-color: @fg2;
   border-radius: @rad;
+  background-color: @bg0;
 }
 
 mainbox {
-    children:               [ inputbar, listview ];
-    padding:                5px;
-    spacing:                20px;
+    children: [ inputbar, listview ];
+    padding: 5px;
+    spacing: 20px;
 }
 
 inputbar {
-    children:               [ prompt, entry ];
-    border-radius:          @rad;
+    background-color: @bg1;
+    children: [ prompt, entry ];
+    border-radius: @rad;
 }
 
 prompt, entry, element selected {
@@ -41,41 +42,55 @@ prompt, entry, element selected {
 }
 
 prompt {
-   padding:                 1% 1%;
+   margin: 10px 7px;
+   padding: 1% 1%;
+   text-color: @fg2;
 }
 
 entry {
-    blink:                  false;
-    placeholder:            "Search...";
-    placeholder-color:      grey;
+    blink: false;
+    placeholder: "Search...";
+    placeholder-color: @fg3;
 }
 
 listview {
-    layout:                 vertical;
-    lines:                  3;
-    columns:                1;
-    cycle:                  false;
+    background-color: transparent;
+    layout: vertical;
+    lines: 3;
+    columns: 1;
+    cycle: false;
 }
 
 element {
-    orientation:            horizontal;
-    padding:                10px;
+    orientation: horizontal;
+    padding: 10px;
+    margin: 0px 10px;
     spacing: 1em;
-    border-radius:          @rad;
+    border-radius: @rad;
 }
 
-element-text, element-icon {
-    vertical-align:         0.5;
-    background-color:       inherit;
+element normal active {
+  text-color: @bg3;
 }
 
-element-text { expand: true; }
-element-icon { size: 35px; }
-
-listview, element, element selected, element-text, element-icon {
-    cursor:                 pointer;
+element alternate active {
+  text-color: @bg3;
 }
 
-entry {
-    cursor:                 text;
+element selected normal, element selected active {
+  background-color: @bg3;
+}
+
+element-icon {
+  size: 35px;
+  vertical-align: 0.5;
+}
+
+element-text {
+  text-color: inherit;
+}
+
+element normal {
+  background-color: @bg0;
+  text-color: @fg0;
 }

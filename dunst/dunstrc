@@ -18,9 +18,9 @@ separator_height = 2
 padding = 10
 horizontal_padding = 8
 text_icon_padding = 0
-frame_width = 5
+frame_width = 2
 sort = yes
-font = JetBrainsMono Nerd Font 14
+font = Mononoki Nerd Font 17
 gap_size = 15
 line_height = 0
 markup = full
@@ -58,18 +58,18 @@ per_monitor_dpi = false
 
 [urgency_low]
 timeout = 3
-background = "#1c1c1c"
-foreground = "#888888"
-highlight = "#444444"
+background = "#ffb4aa"
+foreground = "#f1dedc"
+highlight = "#ffb4aa"
 
 [urgency_normal]
 timeout = 6
-background = "#2e3440"
-foreground = "#eceff4"
-highlight = "#4c566a"
+background = "#442926"
+foreground = "#f1dedc"
+highlight = "#ffb4aa"
 
 [urgency_critical]
 timeout = 0
-background = "#900000"
-foreground = "#ffffff"
-highlight = "#ff0000"
+background = "#ffb4aa"
+foreground = "#f1dedc"
+highlight = "#ffb4aa"

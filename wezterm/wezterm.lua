@@ -1,6 +1,6 @@
 local wezterm = require("wezterm")
 
-local colors = dofile(os.getenv("HOME") .. "/.cache/hellwal/wezterm.lua")
+local colors = require("colors")
 
 local config = wezterm.config_builder()
 
@@ -22,11 +22,7 @@ config.window_padding = {
 	bottom = 5,
 }
 
-config.colors = {
-  cursor_bg = "#ffffff",
-
-  background = colors.background,
-  foreground = colors.foreground
-}
+config.color_scheme = colors.color_scheme
+config.colors = colors.colors
 
 return config
