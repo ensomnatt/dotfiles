@@ -22,7 +22,6 @@ config.window_padding = {
 	bottom = 5,
 }
 
-config.color_scheme = colors.color_scheme
 config.colors = colors.colors
 
 return config
