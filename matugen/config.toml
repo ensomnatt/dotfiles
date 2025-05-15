@@ -1,0 +1,28 @@
+[config]
+
+[templates.hyprland]
+input_path = "./templates/hyprland-colors.conf"
+output_path = "~/.config/hypr/configs/colors.conf"
+post_hook = "hyprctl reload"
+
+[templates.rofi]
+input_path = "./templates/rofi-colors.conf"
+output_path = "~/.config/rofi/colors-matugen.rasi"
+
+[templates.waybar]
+input_path = "./templates/colors.css"
+output_path = "~/.config/waybar/colors.css"
+
+[templates.dunst]
+input_path = "./templates/dunstrc"
+output_path = "~/.config/dunst/dunstrc"
+pre_hook = "killall dunst"
+post_hook = "dunst &"
+
+[templates.wezterm]
+input_path = "./templates/wezterm.hbs"
+output_path = "~/.config/wezterm/colors.lua"
+
+[templates.wlogout]
+input_path = "./templates/colors.css"
+output_path = "~/.config/wlogout/colors.css"
