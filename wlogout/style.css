@@ -1,4 +1,4 @@
-@import "/home/ensomnatt/.cache/wal/colors-waybar.css";
+@import "colors.css";
 
 * {
 	background-image: none;
@@ -10,9 +10,9 @@ window {
 }
 
 button {
-    border-radius: 100;
-    border: none;
-    color: @color2;
+  border-radius: 100;
+  border: none;
+  color: @primary;
 	background-color: rgba(0, 0, 0, 0.4);
 	border-style: solid;
 	border-width: 10px;
@@ -22,7 +22,7 @@ button {
 }
 
 button:focus,  button:hover {
-	color: @color6;
+	color: @primary_container;
 	background-color: rgba(0, 0, 0, 0.6);
 	outline-style: none;
 	background-size: 40%;
