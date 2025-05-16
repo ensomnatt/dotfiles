@@ -1,24 +1,24 @@
 return {
   color_scheme = "Matugen",
   colors = {
-    foreground = "#e7e0e8",
-    background = "#151218",
+    foreground = "#e9e0e7",
+    background = "#161217",
 
-    cursor_bg = "#e7e0e8",
-    cursor_fg = "#cbc4cf",
-    cursor_border = "#d5bbfc",
+    cursor_bg = "#e9e0e7",
+    cursor_fg = "#cec3cd",
+    cursor_border = "#e4b7f3",
 
-    selection_bg = "#523c73",
-    selection_fg = "#ecdcff",
+    selection_bg = "#5d386b",
+    selection_fg = "#f8d8ff",
 
     ansi = {
       "#181818",                                     -- black
       "#ffb4ab",                  -- red
-      "#d5bbfc",                -- green
-      "#6a548d",        -- yellow
-      "#d5bbfc",                -- blue
-      "#f1b7c3",               -- magenta
-      "#cec2db",              -- cyan
+      "#e4b7f3",                -- green
+      "#765084",        -- yellow
+      "#e4b7f3",                -- blue
+      "#f5b7b4",               -- magenta
+      "#d4c0d7",              -- cyan
       "#BAC2DE"                                      -- white
     },
     brights = {
