@@ -6,7 +6,7 @@
     ../../modules/nixos/pkgs/default.nix
     ../../modules/home-manager/hyprland/default.nix
     ../../modules/home-manager/terminal/default.nix
-    ../../modules/home-manager/nvim/default.nix
+    ../../modules/home-manager/nvim.nix
     ../../modules/home-manager/go.nix
     ../../modules/home-manager/gtk.nix
     ../../modules/home-manager/qt.nix
@@ -23,7 +23,7 @@
 
   # configs which aren't nix files
   home.file = {
-    ".config/nvim".source = /home/ensomnatt/nixos/modules/home-manager/nvim;
+
   };
 
   # envs
