@@ -1,0 +1,35 @@
+return {
+  color_scheme = "Matugen",
+  colors = {
+    foreground = "{{colors.on_surface.default.hex}}",
+    background = "{{colors.surface.default.hex}}",
+
+    cursor_bg = "{{colors.on_surface.default.hex}}",
+    cursor_fg = "{{colors.on_surface_variant.default.hex}}",
+    cursor_border = "{{colors.primary.default.hex}}",
+
+    selection_bg = "{{colors.primary_container.default.hex}}",
+    selection_fg = "{{colors.on_primary_container.default.hex}}",
+
+    ansi = {
+      "#181818",                                     -- black
+      "{{colors.error.default.hex}}",                  -- red
+      "{{colors.primary.default.hex}}",                -- green
+      "{{colors.inverse_primary.default.hex}}",        -- yellow
+      "{{colors.primary.default.hex}}",                -- blue
+      "{{colors.tertiary.default.hex}}",               -- magenta
+      "{{colors.secondary.default.hex}}",              -- cyan
+      "#BAC2DE"                                      -- white
+    },
+    brights = {
+      "#585B70",        -- bright black
+      "#F38BA8",        -- bright red
+      "#A6E3A1",        -- bright green
+      "#F9E2AF",        -- bright yellow
+      "#89B4FA",        -- bright blue
+      "#F5C2E7",        -- bright magenta
+      "#94E2D5",        -- bright cyan
+      "#A6ADC8"         -- bright white
+    },
+  },
+}
