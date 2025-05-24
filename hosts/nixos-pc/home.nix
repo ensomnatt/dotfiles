@@ -11,6 +11,7 @@
     ../../modules/home-manager/gtk.nix
     ../../modules/home-manager/qt.nix
     ../../modules/home-manager/git.nix
+    ../../modules/nixos/config/matugen/default.nix
   ];
 
   # home manager settings
@@ -21,14 +22,11 @@
   };
   programs.home-manager.enable = true;
 
-  # configs which aren't nix files
-  home.file = {
-
-  };
-
   # envs
   home.sessionVariables = {
     STEAM_RUNTIME = "1";
+    http_proxy="socks5h://127.0.0.1:1080";
+    https_proxy="socks5h://127.0.0.1:1080";
   };
 
   home.sessionPath = [ "$HOME/.local/bin" ];

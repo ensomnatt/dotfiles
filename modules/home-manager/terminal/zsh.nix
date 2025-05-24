@@ -17,7 +17,7 @@
       save = 1000000;
       ignorePatterns = [
         "cd .."
-	"ls"
+	      "ls"
       ];
       extended = true;
       ignoreDups = true;

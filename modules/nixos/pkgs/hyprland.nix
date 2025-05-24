@@ -8,5 +8,6 @@
     hyprshot
     playerctl
     swww
+    matugen
   ];
 }
