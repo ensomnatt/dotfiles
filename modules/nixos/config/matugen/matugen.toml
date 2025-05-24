@@ -6,8 +6,8 @@ input_path = "/home/ensomnatt/nixos/modules/nixos/config/matugen/templates/hyprl
 output_path = "/home/ensomnatt/.config/hypr/colors.conf"
 
 [templates.rofi]
-input_path = "/home/ensomnatt/nixos/modules/nixos/config/matugen/templates/rofi.conf"
-output_path = "/home/ensomnatt/.config/rofi/colors.rasi"
+input_path = "/home/ensomnatt/nixos/modules/nixos/config/matugen/templates/rofi.rasi"
+output_path = "/home/ensomnatt/.config/rofi/matugen.rasi"
 
 [templates.waybar]
 input_path = "/home/ensomnatt/nixos/modules/nixos/config/matugen/templates/colors.css"

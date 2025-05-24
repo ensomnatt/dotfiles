@@ -9,7 +9,6 @@
     nekoray
     steam
     pavucontrol
-    rofi-wayland
     gnumake
   ];
 }
