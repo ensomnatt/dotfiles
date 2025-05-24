@@ -79,6 +79,7 @@
     nerd-fonts.mononoki
     nerd-fonts.jetbrains-mono
     noto-fonts-cjk-sans
+    noto-fonts-emoji
   ];
 
   environment.sessionVariables = {

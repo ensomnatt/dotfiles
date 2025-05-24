@@ -1,0 +1,21 @@
+@import "/home/ensomnatt/.config/waybar/colors.css";
+
+* {
+  border: none;
+  border-radius: 0;
+  font-family: "Mononoki Nerd Font";
+  font-size: 17px;
+}
+
+window#waybar {
+  background: alpha(@surface, 0.8);
+  margin: 20px 0px;
+}
+
+#custom-nixos, #workspaces, #window, #language {
+  margin-left: 10px;
+}
+
+#clock, #memory, #cpu, #volume {
+  margin-right: 10px;
+}

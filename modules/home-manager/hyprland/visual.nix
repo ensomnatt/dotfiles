@@ -67,4 +67,14 @@
       disable_hyprland_logo = true;
     };
   };
+
+  # matugen
+  wayland.windowManager.hyprland.extraConfig = ''
+    source = $HOME/.config/hypr/colors.conf
+
+    general {
+      col.active_border = $primary
+      col.inactive_border = $on_surface
+    }
+  '';
 }

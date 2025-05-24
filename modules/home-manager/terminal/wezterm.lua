@@ -2,6 +2,8 @@ local wezterm = require("wezterm")
 
 local config = wezterm.config_builder()
 
+local colors = require("colors")
+
 config.font = wezterm.font("Mononoki Nerd Font")
 config.font_size = 18
 
@@ -20,8 +22,6 @@ config.window_padding = {
 	bottom = 5,
 }
 
-config.colors = {
-  cursor_bg = "#ffffff",
-}
+config.colors = colors
 
 return config

@@ -12,6 +12,7 @@
     ../../modules/home-manager/qt.nix
     ../../modules/home-manager/git.nix
     ../../modules/nixos/config/matugen/default.nix
+    ../../modules/home-manager/hyprland_utils/default.nix
   ];
 
   # home manager settings

@@ -16,8 +16,8 @@ output_path = "/home/ensomnatt/.config/waybar/colors.css"
 [templates.dunst]
 input_path = "/home/ensomnatt/nixos/modules/nixos/config/matugen/templates/dunstrc"
 output_path = "/home/ensomnatt/.config/dunst/dunstrc"
-pre_hook = "pkill dunst"
-post_hook = "dunst &"
+# pre_hook = "pkill dunst"
+# post_hook = "dunst &"
 
 [templates.wezterm]
 input_path = "/home/ensomnatt/nixos/modules/nixos/config/matugen/templates/wezterm.hbs"
