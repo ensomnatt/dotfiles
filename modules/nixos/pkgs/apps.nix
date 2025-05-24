@@ -5,9 +5,11 @@
     obsidian
     syncthing
     flatpak
-    nekoray
     telegram-desktop
+    nekoray
     steam
     pavucontrol
+    rofi-wayland
+    gnumake
   ];
 }

@@ -10,5 +10,6 @@
     ripgrep
     tree
     lazygit
+    unzip
   ];
 }

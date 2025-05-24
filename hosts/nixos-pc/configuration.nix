@@ -5,6 +5,8 @@
     [
       ./hardware-configuration.nix
       "${inputs.home-manager}/nixos"
+
+      ../../modules/nixos/config/xray.nix
     ];
 
   # home manager settings
@@ -52,6 +54,7 @@
   };
   programs.zsh.enable = true;
   programs.dconf.enable = true;
+  programs.nix-ld.enable = true;
 
   # nix settings
   nix = {
@@ -72,7 +75,11 @@
     wl-clipboard
   ];
 
-  fonts.packages = with pkgs; [ nerdfonts ];
+  fonts.packages = with pkgs; [ 
+    nerd-fonts.mononoki
+    nerd-fonts.jetbrains-mono
+    noto-fonts-cjk-sans
+  ];
 
   environment.sessionVariables = {
     XDG_DATA_DIRS = "/var/lib/flatpak/exports/share:/usr/share";

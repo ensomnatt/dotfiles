@@ -1,4 +1,4 @@
-{  config, pkgs, lib, ... }:
+{ ... }:
 
 {
   programs.zsh = {
@@ -9,7 +9,7 @@
     shellAliases = {
       ls = "eza --icons=auto";
       tp = "ls ~/.tmux/plugins";
-      nrs = "sudo nixos-rebuild switch";
+      nrs = "sudo nixos-rebuild switch --flake ~/nixos#nixos-pc";
     };
 
     history = {
