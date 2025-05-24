@@ -3,36 +3,34 @@
 {
   programs.waybar = {
     enable = true;
-    settings = {
-      style = builtins.readFile ./style.css;
+    style = builtins.readFile ./style.css;
+    settings.mainBar = {
+      "layer" = "top";
+      "position" = "top";
+      "height" = 40;
+      "reload_style_on_change" = true;
+      "margin-left" = 20;
+      "margin-right" = 20;
 
-      mainBar = {
-        "layer" = "top";
-        "position" = "top";
-        "height" = 40;
-        "reload_style_on_change" = true;
+      modules-left = [
+        "custom/nixos"
+        "hyprland/workspaces"
+        "hyprland/language"
+      ];
 
-        modules-left = [
-          "custom/nixos"
-          "hyprland/workspaces"
-          "hyprland/window"
-          "hyprland/language"
-        ];
+      modules-center = [
+        "mpris"
+      ];
 
-        modules-center = [
-          "mpris"
-        ];
-
-        modules-right = [
-          "group/volume"
-          "cpu"
-          "memory"
-          "clock"
-        ];
-      };
+      modules-right = [
+        "pulseaudio"
+        "cpu"
+        "memory"
+        "clock"
+      ];
 
       "custom/nixos" = {
-        "format" = "";
+        "format" = " ";
       };
 
       "hyprland/workspaces" = {
@@ -44,65 +42,42 @@
       };
 
       "hyprland/window" = {
-        "format" = "{title}";
+        "format" = "{icon} {title}";
       };
 
       "hyprland/language" = {
         "format" = "{}";
-        "format-en" = "🇺🇸🦅";
-        "format-ru" = "🇷🇺🐻";
+        "format-en" = "🇺🇸 🦅";
+        "format-ru" = "🇷🇺 🐻";
       };
 
-      "mpris" = {
+      mpris = {
         "format" = "{artist} - {title}";
+        "max-length" = 40;
       };
 
-      "group/volume" = {
-        "orientation" = "horizontal";
-        "modules" = [
-          "custom/volume"
-          "pulseaudio#input"
-          "pulseaudio#output"
-        ];
-        "drawer" = {
-          "transition-duration" = 500;
-          "transition-left-to-right" = false;
-        };
-      };
-
-      "custom/volume" = {
-        "format" = "";
-      };
-
-      "pulseaudio#input" = {
-        "format" = "󰍬 {volume}%";
-        "format-muted" = "󰍭";
+      pulseaudio = {
         "scroll-step" = 5;
+        "format" = "  {volume}%";
         "on-click" = "pavucontrol";
+        "max-volume" = 150;
       };
 
-      "pulseaudio#output" = {
-        "format" = "󰋋 {volume}%";
-        "format-muted" = "󰟎";
-        "scroll-step" = 5;
-        "on-click" = "pavucontrol";
+      cpu = {
+        "interval" = 1;
+        "format" = "  {usage}%";
       };
-    };
 
-    "cpu" = {
-      "interval" = 1;
-      "format" = " {}%";
-    };
+      memory = {
+        "interval" = 1;
+        "format" = "  {}%";
+      };
 
-    "memory" = {
-      "interval" = 1;
-      "format" = " {}%";
-    };
-
-    "clock" = {
-      "timezone" = "Europe/Moscow";
-      "interval" = 1;
-      "format" = "󰸗 {%a %d %H:%M:%S}";
+      clock = {
+        "timezone" = "Europe/Moscow";
+        "interval" = 1;
+        "format" = "󰸗  {:%H:%M:%S}";
+      };
     };
   };
 }

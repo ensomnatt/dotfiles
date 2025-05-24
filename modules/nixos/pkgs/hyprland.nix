@@ -9,5 +9,9 @@
     playerctl
     swww
     matugen
+    pywal16
+    imagemagick
+    zip # for walogram
+    file # for walogram
   ];
 }

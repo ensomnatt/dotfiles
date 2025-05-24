@@ -1,21 +1,46 @@
 @import "/home/ensomnatt/.config/waybar/colors.css";
 
+@define-color background @surface;
+@define-color main-color @primary_fixed;
+@define-color second-color @primary;
+
 * {
   border: none;
   border-radius: 0;
   font-family: "Mononoki Nerd Font";
-  font-size: 17px;
+  font-size: 18px;
+  font-weight: bolder;
+  color: @main-color;
 }
 
 window#waybar {
-  background: alpha(@surface, 0.8);
-  margin: 20px 0px;
+  background: alpha(@background, 0.85);
+  border-radius: 10px;
+}
+
+.modules-center, .modules-right, .modules-left {
+  margin-top: 5px;
+  margin-bottom: 7px;
 }
 
 #custom-nixos, #workspaces, #window, #language {
-  margin-left: 10px;
+  margin-left: 12px;
 }
 
-#clock, #memory, #cpu, #volume {
-  margin-right: 10px;
+#clock, #memory, #cpu, #pulseaudio {
+  margin-right: 12px;
+}
+
+#custom-nixos, #workspaces, #window, #language, #clock, #memory, #cpu, #pulseaudio, #mpris {
+  padding: 0 15px;
+  background: @background;
+  border-radius: 40px;
+}
+
+#custom-nixos {
+  font-size: 20px;
+}
+
+#mpris {
+  color: @second-color;
 }
