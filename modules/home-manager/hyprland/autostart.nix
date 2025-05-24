@@ -6,6 +6,7 @@
       "waybar"
       "swww-daemon"
       "dunst"
+      "syncthing"
     ];
   };
 }
