@@ -9,5 +9,6 @@
     steam
     pavucontrol
     gnumake
+    libnotify
   ];
 }

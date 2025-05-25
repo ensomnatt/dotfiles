@@ -18,5 +18,6 @@
     findutils
     coreutils
     bc
+    dunst
   ];
 }
