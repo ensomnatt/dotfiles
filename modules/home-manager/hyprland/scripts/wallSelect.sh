@@ -64,7 +64,7 @@ process_image() {
     local md5_file="${cacheDir}/.${nombre_archivo}.md5"
     local lock_file="${cacheDir}/.lock_${nombre_archivo}"
 
-    local current_md5=$(xxh64sum "$imagen" | cut -d' ' -f1)
+    local current_md5=$(xxhsum "$imagen" | cut -d' ' -f1)
 
     (
         flock -x 200
@@ -137,4 +137,4 @@ swww query || swww-daemon --format xrgb
 
 # Run matugen script
 sleep 0.5
-[[ -n "$wall_selection" ]] && ~/.local/bin/wallpaper.sh "$wall_selection"
+[[ -n "$wall_selection" ]] && ~/.local/bin/wallpaper.sh "$wall_dir/$wall_selection"

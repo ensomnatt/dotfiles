@@ -8,7 +8,7 @@
       "rounding 22, class:^(rofi)$"
       "opacity 1.0, class:^(org.telegram.desktop)$"
       "noblur, class:^(org.wezfurlong.wezterm)$"
-      "opacity 1.5 0.9 1.5, class:^(org.wezfurlong.wezterm)$"
+      "opacity 1.5 1.0 1.5, class:^(org.wezfurlong.wezterm)$"
     ];
 
     layerrule = [

@@ -13,8 +13,8 @@
     ./windowrules.nix
   ];
 
-  home.file."${config.xdg.configHome}/hypr/scripts" = {
-    source = ./scripts;
+  home.file."${config.xdg.configHome}/hypr/scripts/wallSelect.sh" = {
+    source = ./scripts/wallSelect.sh;
     executable = true;
   };
 

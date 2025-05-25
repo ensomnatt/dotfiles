@@ -12,6 +12,9 @@
       "$mainMod, C, exec, $colorpicker"
       "$mainMod, P, exec, $lockscreen"
 
+      # scripts
+      "$mainMod, W, exec, ~/.config/hypr/scripts/wallSelect.sh"
+
       # movement
       "$mainMod, H, movefocus, l"
       "$mainMod, L, movefocus, r"

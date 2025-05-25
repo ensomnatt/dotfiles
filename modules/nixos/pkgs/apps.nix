@@ -6,7 +6,6 @@
     syncthing
     flatpak
     telegram-desktop
-    nekoray
     steam
     pavucontrol
     gnumake
