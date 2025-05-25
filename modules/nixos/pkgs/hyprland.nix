@@ -13,5 +13,10 @@
     imagemagick
     zip # for walogram
     file # for walogram
+    jq
+    xxHash
+    findutils
+    coreutils
+    bc
   ];
 }
