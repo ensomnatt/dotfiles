@@ -7,7 +7,6 @@
       "${inputs.home-manager}/nixos"
 
       ../../modules/nixos/config/xray.nix
-      ../../modules/nixos/config/dunst/dunst.nix
     ];
 
   # home manager settings
