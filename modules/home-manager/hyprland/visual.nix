@@ -23,10 +23,6 @@
       inactive_opacity = 0.85;
       fullscreen_opacity = 1;
 
-      layerrule = [
-        "blur,waybar"
-      ];
-
       blur = {
         enabled = true;
         new_optimizations = true;
