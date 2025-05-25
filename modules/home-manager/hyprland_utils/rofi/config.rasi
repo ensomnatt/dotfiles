@@ -15,7 +15,10 @@ window {
     width:          30%;
     height:         50%;
 
-    border-radius:  24px;
+    border-radius:  10px;
+
+    border: 2px;
+    border-color: @bg3;
 
     background-color:   @bg0;
 }
